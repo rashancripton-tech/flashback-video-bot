@@ -105,13 +105,11 @@ jobs:
           CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           INFO=$(cat video_info.txt)
+          
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendDocument" \
             -F chat_id="${CHAT_ID}" \
             -F document=@video_final.mp4 \
-            -F caption="🎵 ${INFO}
-
-📹 90s | 1080x1920
-🎬 Flashback Retrô"
+            -F caption="🎵 ${INFO}"
         
       - name: Commit
         run: |
@@ -127,10 +125,6 @@ jobs:
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          STATUS=${{ job.status }}
-          MSG="✅ Sucesso!"
-          [ "$STATUS" != "success" ] && MSG="❌ Erro!"
-          
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${CHAT_ID}" \
-            --data-urlencode "text=${MSG}"
+            --data-urlencode "text=Bot 2 processamento finalizado"
