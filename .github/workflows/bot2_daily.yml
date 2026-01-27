@@ -1,8 +1,11 @@
 name: Bot 2 - Processar Vídeo (Diário)
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    - cron: '0 12 * * *'  # Todo dia ao meio-dia UTC (9h BRT)
+    - cron: '0 12 * * *'
   workflow_dispatch:
 
 permissions:
@@ -39,17 +42,14 @@ jobs:
           
           print("🎬 Iniciando processamento de vídeo...")
           
-          # Verificar se existe lista de vídeos
           if not os.path.exists('videos_lista.json'):
               print("❌ Arquivo videos_lista.json não encontrado!")
               print("Execute o Bot 1 primeiro para gerar a lista de vídeos.")
               sys.exit(1)
           
-          # Ler lista de vídeos
           with open('videos_lista.json', 'r', encoding='utf-8') as f:
               videos = json.load(f)
           
-          # Encontrar próximo vídeo não processado
           video = None
           for v in videos:
               if not v.get('processado', False):
@@ -66,7 +66,6 @@ jobs:
           print(f"   Duração: {video['duracao']}s")
           print(f"   URL: {video['url']}")
           
-          # Baixar vídeo
           print("\n⬇️ Baixando vídeo do YouTube...")
           ydl_opts = {
               'format': 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
@@ -82,7 +81,6 @@ jobs:
               print(f"❌ Erro no download: {e}")
               sys.exit(1)
           
-          # Converter para vertical 90s
           print("\n🔄 Convertendo para formato vertical (1080x1920, 90s)...")
           comando_ffmpeg = [
               'ffmpeg',
@@ -105,7 +103,6 @@ jobs:
               print(f"❌ Erro na conversão: {e}")
               sys.exit(1)
           
-          # Verificar se arquivo final existe
           if not os.path.exists('video_final.mp4'):
               print("❌ Arquivo final não foi gerado!")
               sys.exit(1)
@@ -113,11 +110,9 @@ jobs:
           tamanho = os.path.getsize('video_final.mp4') / (1024 * 1024)
           print(f"📦 Tamanho do arquivo: {tamanho:.2f} MB")
           
-          # Salvar informações para próximos steps
           with open('video_info.txt', 'w', encoding='utf-8') as f:
               f.write(f"{video['artista']} - {video['titulo']}")
           
-          # Marcar como processado
           video['processado'] = True
           with open('videos_lista.json', 'w', encoding='utf-8') as f:
               json.dump(videos, f, indent=2, ensure_ascii=False)
@@ -136,46 +131,4 @@ jobs:
           
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendDocument" \
             -F chat_id="${CHAT_ID}" \
-            -F document=@video_final.mp4 \
-            -F caption="🎵 ${VIDEO_INFO}
-
-📹 Vídeo pronto para postar! 90 segundos | 1080x1920
-🎬 Flashback Música Retrô"
-          
-          echo "✅ Vídeo enviado!"
-        
-      - name: Commit da lista atualizada
-        run: |
-          git config --local user.email "bot@github.com"
-          git config --local user.name "Flashback Bot"
-          git add videos_lista.json
-          git commit -m "📹 Vídeo processado - $(date +'%Y-%m-%d')" || echo "Nenhuma mudanca"
-          git push
-          
-      - name: Notificar conclusão
-        if: success()
-        env:
-          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: |
-          VIDEO_INFO=$(cat video_info.txt)
-          
-          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${CHAT_ID}" \
-            --data-urlencode "text=✅ Processamento concluído!
-
-📹 ${VIDEO_INFO}
-
-Vídeo enviado acima!"
-          
-      - name: Notificar erro
-        if: failure()
-        env:
-          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: |
-          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${CHAT_ID}" \
-            --data-urlencode "text=❌ Erro no processamento!
-
-Verifique os logs em: https://github.com/${{ github.repository }}/actions"
+            -F document=@video_f
