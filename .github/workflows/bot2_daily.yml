@@ -2,8 +2,8 @@ name: Bot 2 - Processar Vídeo Diário
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # Todo dia às 12h UTC
-  workflow_dispatch:  # Permite execução manual
+    - cron: '0 12 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -16,6 +16,14 @@ jobs:
     steps:
       - name: Checkout repositório
         uses: actions/checkout@v4
+      
+      - name: Debug - Listar arquivos
+        run: |
+          echo "📂 Conteúdo do diretório:"
+          ls -la
+          echo ""
+          echo "🔍 Procurando videos-lista.json:"
+          find . -name "videos-lista.json" -type f 2>/dev/null || echo "Arquivo não encontrado"
       
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -92,8 +100,8 @@ jobs:
           cmd = [
               'ffmpeg',
               '-i', 'video_original.mp4',
-              '-ss', '30',  # Começa aos 30s
-              '-t', '90',   # Duração de 90s
+              '-ss', '30',
+              '-t', '90',
               '-vf', 'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30',
               '-c:v', 'libx264',
               '-preset', 'medium',
