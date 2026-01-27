@@ -2,25 +2,21 @@ name: Bot 2 - Processar Vídeo Diário
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # Todo dia ao meio-dia UTC (9h BRT)
-  workflow_dispatch:  # Permite execução manual
+    - cron: '0 12 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   processar-video:
-    runs-on: ubuntu-22.04  # ✅ UBUNTU 22.04 para compatibilidade com WARP
+    runs-on: ubuntu-latest  # ✅ Voltamos para latest - não precisa mais de 22.04
     
     steps:
       - name: Checkout repositório
         uses: actions/checkout@v4
       
-      # ⚠️ WARP para bypass do bloqueio do YouTube
-      - name: Configurar WARP (bypass YouTube)
-        uses: fscarmen/warp-on-actions@v1.3
-        with:
-          stack: dual
+      # ❌ REMOVEMOS O WARP - Não funciona bem no GitHub Actions
       
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -72,12 +68,28 @@ jobs:
           print(f"   ⏱️ Duração: {video['duracao']}s")
           print(f"   🔗 URL: {video['url']}")
 
-          # Baixar vídeo do YouTube
-          print("\n⬇️ Baixando vídeo do YouTube...")
+          # ✅ CONFIGURAÇÃO COM USER-AGENT SPOOFING
+          print("\n⬇️ Baixando vídeo do YouTube (com bypass)...")
           ydl_opts = {
               'format': 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
               'outtmpl': 'video-original.%(ext)s',
               'merge_output_format': 'mp4',
+              # 🔥 USER-AGENT PERSONALIZADO - Simula navegador real
+              'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              # 🔥 FORÇA CLIENTE ANDROID - YouTube não bloqueia
+              'extractor_args': {
+                  'youtube': {
+                      'player_client': ['android', 'web'],
+                      'skip': ['hls', 'dash']
+                  }
+              },
+              # 🔥 HEADERS EXTRAS para parecer navegador real
+              'http_headers': {
+                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                  'Accept-Language': 'en-us,en;q=0.5',
+                  'Sec-Fetch-Mode': 'navigate',
+              },
               'quiet': False,
               'no_warnings': False,
           }
@@ -97,4 +109,93 @@ jobs:
 
           # Converter para vertical 90s
           print("\n🎨 Convertendo para formato vertical (1080x1920, 90s)...")
-          comando_ffmpeg 
+          comando_ffmpeg = [
+              'ffmpeg',
+              '-i', 'video-original.mp4',
+              '-t', '90',
+              '-vf', 'scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:black',
+              '-c:v', 'libx264',
+              '-preset', 'medium',
+              '-crf', '23',
+              '-c:a', 'aac',
+              '-b:a', '128k',
+              '-y',
+              'video-final.mp4'
+          ]
+
+          try:
+              resultado = subprocess.run(comando_ffmpeg, check=True, capture_output=True, text=True)
+              print("✅ Conversão concluída!")
+          except subprocess.CalledProcessError as e:
+              print(f"❌ Erro na conversão: {e}")
+              print(f"Stderr: {e.stderr}")
+              sys.exit(1)
+
+          # Verificar se arquivo final existe
+          if not os.path.exists('video-final.mp4'):
+              print("❌ Arquivo final não foi gerado!")
+              sys.exit(1)
+
+          # Informações do arquivo
+          tamanho = os.path.getsize('video-final.mp4') / (1024 * 1024)
+          print(f"\n📦 Tamanho do arquivo: {tamanho:.2f} MB")
+
+          # Salvar informações para próximos steps
+          with open('video-info.txt', 'w', encoding='utf-8') as f:
+              f.write(f"🎵 {video['artista']} - {video['titulo']}")
+
+          # Marcar como processado
+          video['processado'] = True
+
+          with open('videos-lista.json', 'w', encoding='utf-8') as f:
+              json.dump(videos, f, indent=2, ensure_ascii=False)
+
+          print("\n✅ Vídeo processado com sucesso!")
+          EOF
+      
+      - name: Enviar vídeo para Telegram
+        run: |
+          VIDEO_INFO=$(cat video-info.txt)
+          echo "📤 Enviando para Telegram: $VIDEO_INFO"
+          
+          curl -F chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+               -F document=@video-final.mp4 \
+               -F caption="$VIDEO_INFO
+          
+          ⏱️ 90 segundos | 📐 1080x1920
+          🎸 Flashback - Música Retrô
+          🤖 Bot Automático" \
+               https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendDocument
+      
+      - name: Commit da lista atualizada
+        run: |
+          git config --local user.email "bot@github.com"
+          git config --local user.name "Flashback Bot"
+          git add videos-lista.json
+          git commit -m "✅ Vídeo processado - $(date '+%Y-%m-%d %H:%M')" || echo "Nenhuma mudança"
+          git push
+      
+      - name: Notificar conclusão
+        if: success()
+        run: |
+          VIDEO_INFO=$(cat video-info.txt)
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="✅ Processamento concluído!
+
+          $VIDEO_INFO
+          📅 $(date '+%d/%m/%Y %H:%M')
+
+          🎥 Vídeo enviado acima!
+          🚀 Bot rodando sem VPN!"
+      
+      - name: Notificar erro
+        if: failure()
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="❌ Erro no processamento!
+
+          📅 $(date '+%d/%m/%Y %H:%M')
+
+          🔍 Verifique os logs: https://github.com/${{ github.repository }}/actions"
