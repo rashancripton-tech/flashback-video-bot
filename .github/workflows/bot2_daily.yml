@@ -1,163 +1,181 @@
-name: Bot 2 - Processar Vídeo Diário
+name: Bot 2 - Processar Vídeo (Diário)
 
 on:
   schedule:
     - cron: '0 12 * * *'  # Todo dia ao meio-dia UTC (9h BRT)
-  workflow_dispatch:  # Permite execução manual
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   processar-video:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout repositório
-      uses: actions/checkout@v4
-      
-    - name: Configurar Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+      - name: Checkout repositório
+        uses: actions/checkout@v4
         
-    - name: Instalar dependências
-      run: |
-        pip install yt-dlp requests
-        sudo apt-get update
-        sudo apt-get install -y ffmpeg
-        
-    - name: Processar vídeo
-      id: processar
-      run: |
-        python3 << 'EOF'
-        import yt_dlp
-        import json
-        import subprocess
-        import os
-        import sys
-
-        print("🎬 Iniciando processamento de vídeo...")
-        
-        # Verificar se existe lista de vídeos
-        if not os.path.exists('videos_lista.json'):
-            print("❌ Arquivo videos_lista.json não encontrado!")
-            print("Execute o Bot 1 primeiro para gerar a lista de vídeos.")
-            sys.exit(1)
-        
-        # Ler lista de vídeos
-        with open('videos_lista.json', 'r', encoding='utf-8') as f:
-            videos = json.load(f)
-        
-        # Encontrar próximo vídeo não processado
-        video = None
-        for v in videos:
-            if not v.get('processado', False):
-                video = v
-                break
-        
-        if not video:
-            print("❌ Não há vídeos pendentes!")
-            sys.exit(1)
-        
-        print(f"\n🎵 Vídeo selecionado:")
-        print(f"   Artista: {video['artista']}")
-        print(f"   Título: {video['titulo']}")
-        print(f"   Duração: {video['duracao']}s")
-        print(f"   URL: {video['url']}")
-        
-        # Baixar vídeo
-        print("\n📥 Baixando vídeo do YouTube...")
-        ydl_opts = {
-            'format': 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
-            'outtmpl': 'video_original.%(ext)s',
-            'merge_output_format': 'mp4',
-        }
-        
-        try:
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([video['url']])
-            print("✅ Download concluído!")
-        except Exception as e:
-            print(f"❌ Erro no download: {e}")
-            sys.exit(1)
-        
-        # Converter para vertical 90s
-        print("\n🎬 Convertendo para formato vertical (1080x1920, 90s)...")
-        
-        comando_ffmpeg = [
-            'ffmpeg',
-            '-i', 'video_original.mp4',
-            '-t', '90',
-            '-vf', 'scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:black',
-            '-c:v', 'libx264',
-            '-preset', 'medium',
-            '-crf', '23',
-            '-c:a', 'aac',
-            '-b:a', '128k',
-            '-y',
-            'video_final.mp4'
-        ]
-        
-        try:
-            subprocess.run(comando_ffmpeg, check=True, capture_output=True)
-            print("✅ Conversão concluída!")
-        except subprocess.CalledProcessError as e:
-            print(f"❌ Erro na conversão: {e}")
-            sys.exit(1)
-        
-        # Verificar se arquivo final existe
-        if not os.path.exists('video_final.mp4'):
-            print("❌ Arquivo final não foi gerado!")
-            sys.exit(1)
-        
-        tamanho = os.path.getsize('video_final.mp4') / (1024 * 1024)
-        print(f"📁 Tamanho do arquivo: {tamanho:.2f} MB")
-        
-        # Salvar informações para próximos steps
-        with open('video_info.txt', 'w', encoding='utf-8') as f:
-            f.write(f"{video['artista']} - {video['titulo']}")
-        
-        # Marcar como processado
-        video['processado'] = True
-        
-        with open('videos_lista.json', 'w', encoding='utf-8') as f:
-            json.dump(videos, f, indent=2, ensure_ascii=False)
-        
-        print("\n✅ Vídeo processado com sucesso!")
-        EOF
-        
-    - name: Enviar vídeo para Telegram
-      run: |
-        VIDEO_INFO=$(cat video_info.txt)
-        echo "📤 Enviando para Telegram: $VIDEO_INFO"
-        
-        curl -F chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-             -F document=@video_final.mp4 \
-             -F caption="🎵 $VIDEO_INFO
-
-📺 Vídeo pronto para postar!
-⏱️ 90 segundos | 📐 1080x1920
-
-#Flashback #Música #Retrô" \
-             https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendDocument
-        
-    - name: Commit da lista atualizada
-      run: |
-        git config --local user.email "bot@github.com"
-        git config --local user.name "Flashback Bot"
-        git add videos_lista.json
-        git commit -m "✅ Vídeo processado - $(date +'%Y-%m-%d')" || echo "Nenhuma mudança"
-        git push
-        
-    - name: Notificar conclusão
-      if: success()
-      run: |
-        VIDEO_INFO=$(cat video_info.txt)
-        curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
-          -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-          -d text="✅ Processamento concluído!%0A%0A🎵 $VIDEO_INFO%0A📅 $(date +'%d/%m/%Y %H:%M')%0A%0AVídeo enviado acima! ⬆️"
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
           
-    - name: Notificar erro
-      if: failure()
-      run: |
-        curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
-          -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-          -d text="❌ Erro no processamento!%0A%0A📅 $(date +'%d/%m/%Y %H:%M')%0A%0AVerifique os logs: https://github.com/${{ github.repository }}/actions"
+      - name: Instalar dependências
+        run: |
+          pip install yt-dlp
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+        
+      - name: Processar vídeo
+        id: processar
+        run: |
+          python3 << 'EOF'
+          import yt_dlp
+          import json
+          import subprocess
+          import os
+          import sys
+          
+          print("🎬 Iniciando processamento de vídeo...")
+          
+          # Verificar se existe lista de vídeos
+          if not os.path.exists('videos_lista.json'):
+              print("❌ Arquivo videos_lista.json não encontrado!")
+              print("Execute o Bot 1 primeiro para gerar a lista de vídeos.")
+              sys.exit(1)
+          
+          # Ler lista de vídeos
+          with open('videos_lista.json', 'r', encoding='utf-8') as f:
+              videos = json.load(f)
+          
+          # Encontrar próximo vídeo não processado
+          video = None
+          for v in videos:
+              if not v.get('processado', False):
+                  video = v
+                  break
+          
+          if not video:
+              print("✅ Todos os vídeos já foram processados!")
+              sys.exit(0)
+          
+          print(f"\n📹 Vídeo selecionado:")
+          print(f"   Artista: {video['artista']}")
+          print(f"   Título: {video['titulo']}")
+          print(f"   Duração: {video['duracao']}s")
+          print(f"   URL: {video['url']}")
+          
+          # Baixar vídeo
+          print("\n⬇️ Baixando vídeo do YouTube...")
+          ydl_opts = {
+              'format': 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
+              'outtmpl': 'video_original.%(ext)s',
+              'merge_output_format': 'mp4',
+          }
+          
+          try:
+              with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                  ydl.download([video['url']])
+              print("✅ Download concluído!")
+          except Exception as e:
+              print(f"❌ Erro no download: {e}")
+              sys.exit(1)
+          
+          # Converter para vertical 90s
+          print("\n🔄 Convertendo para formato vertical (1080x1920, 90s)...")
+          comando_ffmpeg = [
+              'ffmpeg',
+              '-i', 'video_original.mp4',
+              '-t', '90',
+              '-vf', 'scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:black',
+              '-c:v', 'libx264',
+              '-preset', 'medium',
+              '-crf', '23',
+              '-c:a', 'aac',
+              '-b:a', '128k',
+              '-y',
+              'video_final.mp4'
+          ]
+          
+          try:
+              subprocess.run(comando_ffmpeg, check=True, capture_output=True)
+              print("✅ Conversão concluída!")
+          except subprocess.CalledProcessError as e:
+              print(f"❌ Erro na conversão: {e}")
+              sys.exit(1)
+          
+          # Verificar se arquivo final existe
+          if not os.path.exists('video_final.mp4'):
+              print("❌ Arquivo final não foi gerado!")
+              sys.exit(1)
+          
+          tamanho = os.path.getsize('video_final.mp4') / (1024 * 1024)
+          print(f"📦 Tamanho do arquivo: {tamanho:.2f} MB")
+          
+          # Salvar informações para próximos steps
+          with open('video_info.txt', 'w', encoding='utf-8') as f:
+              f.write(f"{video['artista']} - {video['titulo']}")
+          
+          # Marcar como processado
+          video['processado'] = True
+          with open('videos_lista.json', 'w', encoding='utf-8') as f:
+              json.dump(videos, f, indent=2, ensure_ascii=False)
+          
+          print("\n✅ Vídeo processado com sucesso!")
+          EOF
+        
+      - name: Enviar vídeo para Telegram
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          VIDEO_INFO=$(cat video_info.txt)
+          
+          echo "📤 Enviando vídeo para Telegram..."
+          
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendDocument" \
+            -F chat_id="${CHAT_ID}" \
+            -F document=@video_final.mp4 \
+            -F caption="🎵 ${VIDEO_INFO}
+
+📹 Vídeo pronto para postar! 90 segundos | 1080x1920
+🎬 Flashback Música Retrô"
+          
+          echo "✅ Vídeo enviado!"
+        
+      - name: Commit da lista atualizada
+        run: |
+          git config --local user.email "bot@github.com"
+          git config --local user.name "Flashback Bot"
+          git add videos_lista.json
+          git commit -m "📹 Vídeo processado - $(date +'%Y-%m-%d')" || echo "Nenhuma mudanca"
+          git push
+          
+      - name: Notificar conclusão
+        if: success()
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          VIDEO_INFO=$(cat video_info.txt)
+          
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT_ID}" \
+            --data-urlencode "text=✅ Processamento concluído!
+
+📹 ${VIDEO_INFO}
+
+Vídeo enviado acima!"
+          
+      - name: Notificar erro
+        if: failure()
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT_ID}" \
+            --data-urlencode "text=❌ Erro no processamento!
+
+Verifique os logs em: https://github.com/${{ github.repository }}/actions"
