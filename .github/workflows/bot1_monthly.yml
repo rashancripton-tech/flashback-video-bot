@@ -1,0 +1,105 @@
+name: Bot 1 - Buscar Vídeos (Mensal)
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # Dia 1 de cada mês à meia-noite
+  workflow_dispatch:  # Permite execução manual
+
+jobs:
+  buscar-videos:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repositório
+      uses: actions/checkout@v4
+      
+    - name: Configurar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Instalar yt-dlp
+      run: |
+        pip install yt-dlp
+        
+    - name: Buscar vídeos no YouTube
+      run: |
+        python3 << 'EOF'
+        import yt_dlp
+        import json
+        import random
+
+        print("🔍 Iniciando busca de vídeos no YouTube...")
+        
+        # Ler lista de artistas
+        with open('artistas.txt', 'r', encoding='utf-8') as f:
+            artistas = [linha.strip() for linha in f if linha.strip()]
+        
+        videos_encontrados = []
+        
+        for artista in artistas:
+            print(f"\n🎵 Buscando: {artista}")
+            
+            ydl_opts = {
+                'quiet': True,
+                'no_warnings': True,
+                'extract_flat': True,
+            }
+            
+            try:
+                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                    resultado = ydl.extract_info(f"ytsearch5:{artista} official video", download=False)
+                    
+                    if 'entries' in resultado:
+                        for video in resultado['entries']:
+                            if video:
+                                url = f"https://www.youtube.com/watch?v={video['id']}"
+                                titulo = video.get('title', 'Sem título')
+                                duracao = video.get('duration', 0)
+                                
+                                # Filtrar: entre 90s e 8min (480s)
+                                if 90 <= duracao <= 480:
+                                    videos_encontrados.append({
+                                        'artista': artista,
+                                        'titulo': titulo,
+                                        'url': url,
+                                        'duracao': duracao,
+                                        'processado': False
+                                    })
+                                    print(f"  ✅ {titulo} ({duracao}s)")
+                                    
+                                    # Limitar a 150 vídeos no total
+                                    if len(videos_encontrados) >= 150:
+                                        break
+                        
+                if len(videos_encontrados) >= 150:
+                    break
+                    
+            except Exception as e:
+                print(f"  ❌ Erro ao buscar {artista}: {e}")
+        
+        # Embaralhar para variedade
+        random.shuffle(videos_encontrados)
+        
+        # Salvar lista
+        with open('videos_lista.json', 'w', encoding='utf-8') as f:
+            json.dump(videos_encontrados, f, indent=2, ensure_ascii=False)
+        
+        print(f"\n✅ Total de vídeos encontrados: {len(videos_encontrados)}")
+        print("📄 Lista salva em: videos_lista.json")
+        EOF
+        
+    - name: Commit da lista de vídeos
+      run: |
+        git config --local user.email "bot@github.com"
+        git config --local user.name "Flashback Bot"
+        git add videos_lista.json
+        git commit -m "🎬 Lista de vídeos atualizada - $(date +'%Y-%m-%d')" || echo "Nenhuma mudança para commitar"
+        git push
+        
+    - name: Notificar no Telegram
+      if: always()
+      run: |
+        curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+          -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+          -d text="🤖 Bot 1 - Busca Mensal Concluída!%0A%0A✅ Nova lista de vídeos gerada%0A📅 $(date +'%d/%m/%Y %H:%M')"
