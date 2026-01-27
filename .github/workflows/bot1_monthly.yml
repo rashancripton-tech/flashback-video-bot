@@ -5,6 +5,9 @@ on:
     - cron: '0 0 1 * *'  # Dia 1 de cada mês à meia-noite
   workflow_dispatch:  # Permite execução manual
 
+permissions:
+  contents: write
+
 jobs:
   buscar-videos:
     runs-on: ubuntu-latest
@@ -38,7 +41,7 @@ jobs:
         videos_encontrados = []
         
         for artista in artistas:
-            print(f"\n🎵 Buscando: {artista}")
+            print(f"\\n🎵 Buscando: {artista}")
             
             ydl_opts = {
                 'quiet': True,
@@ -85,7 +88,7 @@ jobs:
         with open('videos_lista.json', 'w', encoding='utf-8') as f:
             json.dump(videos_encontrados, f, indent=2, ensure_ascii=False)
         
-        print(f"\n✅ Total de vídeos encontrados: {len(videos_encontrados)}")
+        print(f"\\n✅ Total de vídeos encontrados: {len(videos_encontrados)}")
         print("📄 Lista salva em: videos_lista.json")
         EOF
         
