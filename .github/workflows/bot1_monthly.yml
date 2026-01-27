@@ -2,8 +2,8 @@ name: Bot 1 - Buscar Vídeos (Mensal)
 
 on:
   schedule:
-    - cron: '0 0 1 * *'  # Dia 1 de cada mês à meia-noite
-  workflow_dispatch:  # Permite execução manual
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -34,7 +34,6 @@ jobs:
 
         print("🔍 Iniciando busca de vídeos no YouTube...")
         
-        # Ler lista de artistas
         with open('artistas.txt', 'r', encoding='utf-8') as f:
             artistas = [linha.strip() for linha in f if linha.strip()]
         
@@ -60,7 +59,6 @@ jobs:
                                 titulo = video.get('title', 'Sem título')
                                 duracao = video.get('duration', 0)
                                 
-                                # Filtrar: entre 90s e 8min (480s)
                                 if 90 <= duracao <= 480:
                                     videos_encontrados.append({
                                         'artista': artista,
@@ -71,7 +69,6 @@ jobs:
                                     })
                                     print(f"  ✅ {titulo} ({duracao}s)")
                                     
-                                    # Limitar a 150 vídeos no total
                                     if len(videos_encontrados) >= 150:
                                         break
                         
@@ -81,10 +78,8 @@ jobs:
             except Exception as e:
                 print(f"  ❌ Erro ao buscar {artista}: {e}")
         
-        # Embaralhar para variedade
         random.shuffle(videos_encontrados)
         
-        # Salvar lista
         with open('videos_lista.json', 'w', encoding='utf-8') as f:
             json.dump(videos_encontrados, f, indent=2, ensure_ascii=False)
         
@@ -106,6 +101,5 @@ jobs:
         BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: |
-        curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
-          -d "chat_id=${CHAT_ID}" \
-          -d "text=Bot 1 - Busca Mensal Concluida! Nova lista de videos gerada em $(date +'%d/%m/%Y %H:%M')"
+        DATA_HORA=$(date +'%d/%m/%Y %H:%M')
+        curl -s "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=Bot%201%20-%20Busca%20Mensal%20Concluida!%0A%0ANova%20lista%20de%20videos%20gerada%20em%20${DATA_HORA}"
