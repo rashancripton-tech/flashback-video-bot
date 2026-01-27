@@ -1,0 +1,47 @@
+name: Debug Telegram
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Teste 1 - Mostrar tamanho das variáveis
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          echo "=== TESTE 1: TAMANHO DAS VARIAVEIS ==="
+          echo "Tamanho BOT_TOKEN: ${#BOT_TOKEN}"
+          echo "Tamanho CHAT_ID: ${#CHAT_ID}"
+          echo ""
+          
+      - name: Teste 2 - Mostrar primeiros caracteres (seguro)
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          echo "=== TESTE 2: PRIMEIROS CARACTERES ==="
+          echo "BOT_TOKEN inicia com: ${BOT_TOKEN:0:10}..."
+          echo "CHAT_ID: ${CHAT_ID}"
+          echo ""
+          
+      - name: Teste 3 - Construir URL sem chamar
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          echo "=== TESTE 3: URL CONSTRUIDA ==="
+          URL="https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=teste"
+          echo "URL completa (primeiros 80 chars): ${URL:0:80}..."
+          echo "Tamanho total da URL: ${#URL}"
+          echo ""
+          
+      - name: Teste 4 - Testar curl com verbose
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          echo "=== TESTE 4: CURL COM VERBOSE ==="
+          curl -v "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=teste" 2>&1 || echo "FALHOU com codigo: $?"
