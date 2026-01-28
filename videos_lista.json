@@ -39,7 +39,9 @@
     "titulo": "Eurythmics, Annie Lennox, Dave Stewart - There Must Be An Angel (Playing With My Heart) (Remastered)",
     "url": "https://www.youtube.com/watch?v=RCdneDxFRYQ",
     "duracao": 283.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-01-28 14:04:55",
+    "proxy_usado": "186.250.29.225"
   },
   {
     "artista": "Queen",
