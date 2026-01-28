@@ -11,7 +11,7 @@ permissions:
 jobs:
   processar-video:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     
     steps:
       - name: Checkout repositório
@@ -32,7 +32,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          PROXY_URL: ${{ secrets.PROXY_URL }}
+          PROXY_LIST: ${{ secrets.PROXY_LIST }}
         run: |
           python3 << 'EOF'
           import yt_dlp
@@ -67,90 +67,91 @@ jobs:
           print(f"🎤 Artista: {video_atual['artista']}")
           print(f"🔗 URL: {video_atual['url']}")
 
-          # Configurar proxy rotativo
-          proxy_url = os.environ.get('PROXY_URL')
+          # Carregar lista de proxies
+          proxy_list_str = os.environ.get('PROXY_LIST', '')
+          proxy_list = [p.strip() for p in proxy_list_str.split(',') if p.strip()]
           
-          if proxy_url:
-              print(f"\n🌐 Usando proxy rotativo: {proxy_url.split('@')[0] if '@' in proxy_url else proxy_url.split('//')[1].split(':')[0]}")
+          if proxy_list:
+              print(f"\n🌐 {len(proxy_list)} proxies disponíveis para rotação")
           else:
-              print("\n⚠️ Nenhum proxy configurado - usando IP direto")
+              print("\n⚠️ Nenhum proxy configurado - usando conexão direta")
+              proxy_list = [None]
 
-          # Delay aleatório inicial (simula comportamento humano)
+          # Delay aleatório inicial
           delay_inicial = random.randint(3, 8)
           print(f"\n⏱️ Aguardando {delay_inicial}s (comportamento humano)...")
           time.sleep(delay_inicial)
 
-          print("\n⬇️ Baixando vídeo do YouTube...")
+          print("\n⬇️ Tentando baixar vídeo do YouTube...")
           
-          ydl_opts = {
-              'format': 'best[height<=720][ext=mp4]/best[height<=720]/best',
-              'outtmpl': 'video_original.%(ext)s',
-              'quiet': True,
-              'no_warnings': True,
-              'socket_timeout': 60,
-              'retries': 10,
-              'fragment_retries': 10,
-              'file_access_retries': 5,
-              'extractor_retries': 5,
-              'sleep_interval': 5,
-              'max_sleep_interval': 15,
-              'sleep_interval_subtitles': 5,
-              'extractor_args': {
-                  'youtube': {
-                      'player_client': ['ios', 'android', 'web'],
-                      'skip': ['hls', 'dash']
+          sucesso_download = False
+          proxy_usado = None
+          
+          # Tentar cada proxy da lista
+          for idx, proxy in enumerate(proxy_list, 1):
+              if sucesso_download:
+                  break
+                  
+              proxy_display = proxy.split('@')[0] if proxy and '@' in proxy else (proxy.split('//')[1].split(':')[0] if proxy else "Conexão Direta")
+              print(f"\n📡 Tentativa {idx}/{len(proxy_list)}: {proxy_display}")
+              
+              ydl_opts = {
+                  'format': 'best[height<=720][ext=mp4]/best[height<=720]/best',
+                  'outtmpl': 'video_original.%(ext)s',
+                  'quiet': True,
+                  'no_warnings': True,
+                  'socket_timeout': 30,
+                  'retries': 3,
+                  'fragment_retries': 3,
+                  'file_access_retries': 2,
+                  'extractor_retries': 2,
+                  'sleep_interval': 5,
+                  'max_sleep_interval': 10,
+                  'extractor_args': {
+                      'youtube': {
+                          'player_client': ['ios', 'android', 'web'],
+                          'skip': ['hls', 'dash']
+                      }
+                  },
+                  'http_headers': {
+                      'User-Agent': 'com.google.ios.youtube/19.29.1 (iPhone16,2; U; CPU iOS 17_5_1 like Mac OS X;)',
+                      'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
                   }
-              },
-              'http_headers': {
-                  'User-Agent': 'com.google.ios.youtube/19.29.1 (iPhone16,2; U; CPU iOS 17_5_1 like Mac OS X;)',
-                  'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
               }
-          }
 
-          # Adicionar proxy se disponível
-          if proxy_url:
-              ydl_opts['proxy'] = proxy_url
+              if proxy:
+                  ydl_opts['proxy'] = proxy
 
-          tentativas = 0
-          max_tentativas = 3
-          sucesso = False
-
-          while tentativas < max_tentativas and not sucesso:
-              tentativas += 1
               try:
-                  print(f"   📥 Tentativa {tentativas}/{max_tentativas}...")
-                  
-                  # Delay entre tentativas (exceto primeira)
-                  if tentativas > 1:
-                      delay = random.randint(10, 20)
-                      print(f"   ⏳ Aguardando {delay}s antes de tentar novamente...")
-                      time.sleep(delay)
-                  
                   with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                       ydl.download([video_atual['url']])
                   
-                  print("✅ Download concluído!")
-                  sucesso = True
+                  print(f"   ✅ Download concluído com sucesso!")
+                  sucesso_download = True
+                  proxy_usado = proxy_display
                   
               except Exception as e:
-                  erro_msg = str(e)
-                  print(f"   ⚠️ Erro: {erro_msg[:150]}")
+                  erro_msg = str(e)[:150]
+                  print(f"   ❌ Falhou: {erro_msg}")
                   
-                  if tentativas >= max_tentativas:
-                      print(f"❌ Falhou após {max_tentativas} tentativas")
-                      video_atual['processado'] = True
-                      video_atual['erro'] = erro_msg[:300]
-                      video_atual['data_processamento'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                      with open('videos_lista.json', 'w', encoding='utf-8') as f:
-                          json.dump(videos, f, indent=2, ensure_ascii=False)
-                      
-                      # Notificar erro específico
-                      if 'bot' in erro_msg.lower():
-                          print("\n⚠️ Detectado como bot - proxy pode precisar rotação")
-                      
-                      exit(1)
+                  # Se não for o último proxy, aguarda um pouco antes de tentar o próximo
+                  if idx < len(proxy_list):
+                      delay = random.randint(5, 10)
+                      print(f"   ⏳ Aguardando {delay}s antes do próximo proxy...")
+                      time.sleep(delay)
 
-          # Delay antes da conversão (simula humano assistindo)
+          if not sucesso_download:
+              print(f"\n❌ Todos os {len(proxy_list)} proxies falharam!")
+              video_atual['processado'] = True
+              video_atual['erro'] = f"Falha em todos os {len(proxy_list)} proxies"
+              video_atual['data_processamento'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+              
+              with open('videos_lista.json', 'w', encoding='utf-8') as f:
+                  json.dump(videos, f, indent=2, ensure_ascii=False)
+              
+              exit(1)
+
+          # Delay pós-download
           delay_pos = random.randint(2, 5)
           print(f"\n⏱️ Pausa de {delay_pos}s...")
           time.sleep(delay_pos)
@@ -177,7 +178,7 @@ jobs:
           
           telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN')
           chat_id = os.environ.get('TELEGRAM_CHAT_ID')
-          caption = f"🎵 {video_atual['titulo']}\n\n🎤 {video_atual['artista']}\n\n🎬 Flashback Video Bot"
+          caption = f"🎵 {video_atual['titulo']}\n\n🎤 {video_atual['artista']}\n\n🎬 Flashback Video Bot\n🌐 Proxy: {proxy_usado}"
           
           try:
               with open('video_vertical.mp4', 'rb') as video_file:
@@ -203,6 +204,7 @@ jobs:
 
           video_atual['processado'] = True
           video_atual['data_processamento'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+          video_atual['proxy_usado'] = proxy_usado
           
           with open('videos_lista.json', 'w', encoding='utf-8') as f:
               json.dump(videos, f, indent=2, ensure_ascii=False)
@@ -210,6 +212,7 @@ jobs:
           restantes = sum(1 for v in videos if not v.get('processado', False))
           print(f"\n✅ Processamento concluído!")
           print(f"📊 Vídeos restantes: {restantes}")
+          print(f"🌐 Proxy que funcionou: {proxy_usado}")
           EOF
       
       - name: Commit da lista atualizada
@@ -238,10 +241,10 @@ jobs:
         run: |
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-            -d text="❌ Erro no processamento!
+            -d text="❌ Todos os proxies falharam!
 
           📅 $(date '+%d/%m/%Y %H:%M')
           
-          🔍 Verifique se o proxy precisa ser atualizado
+          🔄 Atualize a lista de proxies em Settings → Secrets
           
           Logs: https://github.com/${{ github.repository }}/actions"
