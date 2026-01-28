@@ -11,7 +11,7 @@ permissions:
 jobs:
   processar-video:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     
     steps:
       - name: Checkout repositório
@@ -32,6 +32,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PROXY_URL: ${{ secrets.PROXY_URL }}
         run: |
           python3 << 'EOF'
           import yt_dlp
@@ -39,21 +40,19 @@ jobs:
           import os
           import subprocess
           import requests
+          import time
+          import random
           from datetime import datetime
 
           print("🎬 Iniciando processamento de vídeo...")
 
-          # Verificar se o arquivo existe
           if not os.path.exists('videos_lista.json'):
               print("❌ Arquivo videos_lista.json não encontrado!")
-              print("⚠️ Execute o Bot 1 primeiro para gerar a lista de vídeos.")
               exit(1)
 
-          # Carregar lista de vídeos
           with open('videos_lista.json', 'r', encoding='utf-8') as f:
               videos = json.load(f)
 
-          # Encontrar primeiro vídeo não processado
           video_atual = None
           for video in videos:
               if not video.get('processado', False):
@@ -62,87 +61,123 @@ jobs:
 
           if not video_atual:
               print("✅ Todos os vídeos já foram processados!")
-              print("💡 Execute o Bot 1 novamente para gerar nova lista.")
               exit(0)
 
           print(f"\n📹 Processando: {video_atual['titulo']}")
           print(f"🎤 Artista: {video_atual['artista']}")
           print(f"🔗 URL: {video_atual['url']}")
 
-          # Baixar vídeo com configurações anti-bot atualizadas
+          # Configurar proxy rotativo
+          proxy_url = os.environ.get('PROXY_URL')
+          
+          if proxy_url:
+              print(f"\n🌐 Usando proxy rotativo: {proxy_url.split('@')[0] if '@' in proxy_url else proxy_url.split('//')[1].split(':')[0]}")
+          else:
+              print("\n⚠️ Nenhum proxy configurado - usando IP direto")
+
+          # Delay aleatório inicial (simula comportamento humano)
+          delay_inicial = random.randint(3, 8)
+          print(f"\n⏱️ Aguardando {delay_inicial}s (comportamento humano)...")
+          time.sleep(delay_inicial)
+
           print("\n⬇️ Baixando vídeo do YouTube...")
+          
           ydl_opts = {
               'format': 'best[height<=720][ext=mp4]/best[height<=720]/best',
               'outtmpl': 'video_original.%(ext)s',
               'quiet': True,
               'no_warnings': True,
+              'socket_timeout': 60,
+              'retries': 10,
+              'fragment_retries': 10,
+              'file_access_retries': 5,
+              'extractor_retries': 5,
+              'sleep_interval': 5,
+              'max_sleep_interval': 15,
+              'sleep_interval_subtitles': 5,
               'extractor_args': {
                   'youtube': {
-                      'player_client': ['ios', 'android'],
-                      'skip': ['hls', 'dash', 'translated_subs']
+                      'player_client': ['ios', 'android', 'web'],
+                      'skip': ['hls', 'dash']
                   }
               },
               'http_headers': {
                   'User-Agent': 'com.google.ios.youtube/19.29.1 (iPhone16,2; U; CPU iOS 17_5_1 like Mac OS X;)',
-                  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                  'Accept-Language': 'en-us,en;q=0.5',
-                  'Accept-Encoding': 'gzip, deflate',
-              },
-              'retries': 3,
-              'fragment_retries': 3,
+                  'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+              }
           }
 
-          try:
-              with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                  ydl.download([video_atual['url']])
-              print("✅ Download concluído!")
-          except Exception as e:
-              print(f"❌ Erro ao baixar vídeo: {e}")
-              # Marcar como processado com erro e pular
-              video_atual['processado'] = True
-              video_atual['erro'] = str(e)
-              video_atual['data_processamento'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-              with open('videos_lista.json', 'w', encoding='utf-8') as f:
-                  json.dump(videos, f, indent=2, ensure_ascii=False)
-              print("⏭️ Marcando como processado e pulando para próximo vídeo...")
-              exit(0)
+          # Adicionar proxy se disponível
+          if proxy_url:
+              ydl_opts['proxy'] = proxy_url
 
-          # Converter para vertical 90s
-          print("\n🎨 Convertendo para formato vertical (9:16) - 90 segundos...")
+          tentativas = 0
+          max_tentativas = 3
+          sucesso = False
+
+          while tentativas < max_tentativas and not sucesso:
+              tentativas += 1
+              try:
+                  print(f"   📥 Tentativa {tentativas}/{max_tentativas}...")
+                  
+                  # Delay entre tentativas (exceto primeira)
+                  if tentativas > 1:
+                      delay = random.randint(10, 20)
+                      print(f"   ⏳ Aguardando {delay}s antes de tentar novamente...")
+                      time.sleep(delay)
+                  
+                  with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                      ydl.download([video_atual['url']])
+                  
+                  print("✅ Download concluído!")
+                  sucesso = True
+                  
+              except Exception as e:
+                  erro_msg = str(e)
+                  print(f"   ⚠️ Erro: {erro_msg[:150]}")
+                  
+                  if tentativas >= max_tentativas:
+                      print(f"❌ Falhou após {max_tentativas} tentativas")
+                      video_atual['processado'] = True
+                      video_atual['erro'] = erro_msg[:300]
+                      video_atual['data_processamento'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                      with open('videos_lista.json', 'w', encoding='utf-8') as f:
+                          json.dump(videos, f, indent=2, ensure_ascii=False)
+                      
+                      # Notificar erro específico
+                      if 'bot' in erro_msg.lower():
+                          print("\n⚠️ Detectado como bot - proxy pode precisar rotação")
+                      
+                      exit(1)
+
+          # Delay antes da conversão (simula humano assistindo)
+          delay_pos = random.randint(2, 5)
+          print(f"\n⏱️ Pausa de {delay_pos}s...")
+          time.sleep(delay_pos)
+
+          print("\n🎨 Convertendo para formato vertical (9:16)...")
           
           cmd = [
-              'ffmpeg',
-              '-i', 'video_original.mp4',
-              '-ss', '30',
-              '-t', '90',
+              'ffmpeg', '-i', 'video_original.mp4',
+              '-ss', '30', '-t', '90',
               '-vf', 'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30',
-              '-c:v', 'libx264',
-              '-preset', 'medium',
-              '-crf', '23',
-              '-c:a', 'aac',
-              '-b:a', '128k',
-              '-ar', '44100',
-              '-movflags', '+faststart',
-              '-y',
-              'video_vertical.mp4'
+              '-c:v', 'libx264', '-preset', 'medium', '-crf', '23',
+              '-c:a', 'aac', '-b:a', '128k', '-ar', '44100',
+              '-movflags', '+faststart', '-y', 'video_vertical.mp4'
           ]
 
           try:
               subprocess.run(cmd, check=True, capture_output=True, text=True)
               print("✅ Conversão concluída!")
           except subprocess.CalledProcessError as e:
-              print(f"❌ Erro na conversão: {e.stderr}")
+              print(f"❌ Erro na conversão: {e.stderr[:200]}")
               exit(1)
 
-          # Enviar para Telegram
           print("\n📤 Enviando para Telegram...")
           
           telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN')
           chat_id = os.environ.get('TELEGRAM_CHAT_ID')
-          
           caption = f"🎵 {video_atual['titulo']}\n\n🎤 {video_atual['artista']}\n\n🎬 Flashback Video Bot"
-          
-          url = f"https://api.telegram.org/bot{telegram_token}/sendVideo"
           
           try:
               with open('video_vertical.mp4', 'rb') as video_file:
@@ -152,27 +187,29 @@ jobs:
                       'caption': caption,
                       'supports_streaming': True
                   }
-                  response = requests.post(url, files=files, data=data, timeout=300)
+                  response = requests.post(
+                      f"https://api.telegram.org/bot{telegram_token}/sendVideo",
+                      files=files, data=data, timeout=300
+                  )
                   
               if response.status_code == 200:
                   print("✅ Vídeo enviado com sucesso!")
               else:
-                  print(f"⚠️ Resposta da API: {response.text}")
+                  print(f"⚠️ Resposta da API: {response.text[:200]}")
                   
           except Exception as e:
-              print(f"❌ Erro ao enviar para Telegram: {e}")
+              print(f"❌ Erro ao enviar: {str(e)[:200]}")
               exit(1)
 
-          # Marcar como processado
           video_atual['processado'] = True
           video_atual['data_processamento'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-
-          # Salvar lista atualizada
+          
           with open('videos_lista.json', 'w', encoding='utf-8') as f:
               json.dump(videos, f, indent=2, ensure_ascii=False)
 
-          print("\n✅ Processamento concluído!")
-          print(f"📊 Vídeos restantes: {sum(1 for v in videos if not v.get('processado', False))}")
+          restantes = sum(1 for v in videos if not v.get('processado', False))
+          print(f"\n✅ Processamento concluído!")
+          print(f"📊 Vídeos restantes: {restantes}")
           EOF
       
       - name: Commit da lista atualizada
@@ -194,7 +231,7 @@ jobs:
           🎬 Novo vídeo enviado com sucesso
           📅 $(date '+%d/%m/%Y %H:%M')
           
-          🔄 Próximo vídeo será processado amanhã às 12h"
+          🔄 Próximo vídeo amanhã às 12h"
       
       - name: Notificar erro
         if: failure()
@@ -205,4 +242,6 @@ jobs:
 
           📅 $(date '+%d/%m/%Y %H:%M')
           
-          🔍 Verifique os logs: https://github.com/${{ github.repository }}/actions"
+          🔍 Verifique se o proxy precisa ser atualizado
+          
+          Logs: https://github.com/${{ github.repository }}/actions"
