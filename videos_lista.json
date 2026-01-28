@@ -21,7 +21,9 @@
     "titulo": "The Police - Roxanne (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=3T1c7GkzRQQ",
     "duracao": 190.0,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 1 proxies",
+    "data_processamento": "2026-01-28 01:49:26"
   },
   {
     "artista": "Pet Shop Boys",
