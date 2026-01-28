@@ -11,7 +11,7 @@ permissions:
 jobs:
   processar-video:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     
     steps:
       - name: Checkout repositório
@@ -69,20 +69,27 @@ jobs:
           print(f"🎤 Artista: {video_atual['artista']}")
           print(f"🔗 URL: {video_atual['url']}")
 
-          # Baixar vídeo
+          # Baixar vídeo com configurações anti-bot atualizadas
           print("\n⬇️ Baixando vídeo do YouTube...")
           ydl_opts = {
-              'format': 'bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/best[height<=720][ext=mp4]/best',
+              'format': 'best[height<=720][ext=mp4]/best[height<=720]/best',
               'outtmpl': 'video_original.%(ext)s',
-              'quiet': False,
-              'no_warnings': False,
-              'extractor_args': {'youtube': {'player_client': ['android', 'web']}},
+              'quiet': True,
+              'no_warnings': True,
+              'extractor_args': {
+                  'youtube': {
+                      'player_client': ['ios', 'android'],
+                      'skip': ['hls', 'dash', 'translated_subs']
+                  }
+              },
               'http_headers': {
-                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                  'User-Agent': 'com.google.ios.youtube/19.29.1 (iPhone16,2; U; CPU iOS 17_5_1 like Mac OS X;)',
                   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                   'Accept-Language': 'en-us,en;q=0.5',
-                  'Sec-Fetch-Mode': 'navigate',
-              }
+                  'Accept-Encoding': 'gzip, deflate',
+              },
+              'retries': 3,
+              'fragment_retries': 3,
           }
 
           try:
@@ -91,12 +98,14 @@ jobs:
               print("✅ Download concluído!")
           except Exception as e:
               print(f"❌ Erro ao baixar vídeo: {e}")
-              # Marcar como processado mesmo com erro para não travar
+              # Marcar como processado com erro e pular
               video_atual['processado'] = True
               video_atual['erro'] = str(e)
+              video_atual['data_processamento'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
               with open('videos_lista.json', 'w', encoding='utf-8') as f:
                   json.dump(videos, f, indent=2, ensure_ascii=False)
-              exit(1)
+              print("⏭️ Marcando como processado e pulando para próximo vídeo...")
+              exit(0)
 
           # Converter para vertical 90s
           print("\n🎨 Convertendo para formato vertical (9:16) - 90 segundos...")
@@ -167,6 +176,7 @@ jobs:
           EOF
       
       - name: Commit da lista atualizada
+        if: always()
         run: |
           git config --local user.email "bot@github.com"
           git config --local user.name "Flashback Bot"
