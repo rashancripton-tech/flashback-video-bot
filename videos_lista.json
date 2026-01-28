@@ -30,7 +30,9 @@
     "titulo": "Pet Shop Boys - Feel (Official Video)",
     "url": "https://www.youtube.com/watch?v=ds9tuIp-JrU",
     "duracao": 220.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-01-28 02:19:43",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Eurythmics",
