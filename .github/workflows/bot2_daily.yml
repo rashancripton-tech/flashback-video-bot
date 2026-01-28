@@ -17,14 +17,6 @@ jobs:
       - name: Checkout repositório
         uses: actions/checkout@v4
       
-      - name: Debug - Listar arquivos
-        run: |
-          echo "📂 Conteúdo do diretório:"
-          ls -la
-          echo ""
-          echo "🔍 Procurando videos_lista.json:"
-          find . -name "videos_lista.json" -type f 2>/dev/null || echo "Arquivo não encontrado"
-      
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
@@ -34,7 +26,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-          pip install yt-dlp requests
+          pip install -U yt-dlp requests
       
       - name: Processar vídeo
         env:
@@ -84,6 +76,13 @@ jobs:
               'outtmpl': 'video_original.%(ext)s',
               'quiet': False,
               'no_warnings': False,
+              'extractor_args': {'youtube': {'player_client': ['android', 'web']}},
+              'http_headers': {
+                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                  'Accept-Language': 'en-us,en;q=0.5',
+                  'Sec-Fetch-Mode': 'navigate',
+              }
           }
 
           try:
@@ -92,6 +91,11 @@ jobs:
               print("✅ Download concluído!")
           except Exception as e:
               print(f"❌ Erro ao baixar vídeo: {e}")
+              # Marcar como processado mesmo com erro para não travar
+              video_atual['processado'] = True
+              video_atual['erro'] = str(e)
+              with open('videos_lista.json', 'w', encoding='utf-8') as f:
+                  json.dump(videos, f, indent=2, ensure_ascii=False)
               exit(1)
 
           # Converter para vertical 90s
