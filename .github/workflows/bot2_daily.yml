@@ -22,8 +22,8 @@ jobs:
           echo "📂 Conteúdo do diretório:"
           ls -la
           echo ""
-          echo "🔍 Procurando videos-lista.json:"
-          find . -name "videos-lista.json" -type f 2>/dev/null || echo "Arquivo não encontrado"
+          echo "🔍 Procurando videos_lista.json:"
+          find . -name "videos_lista.json" -type f 2>/dev/null || echo "Arquivo não encontrado"
       
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -52,13 +52,13 @@ jobs:
           print("🎬 Iniciando processamento de vídeo...")
 
           # Verificar se o arquivo existe
-          if not os.path.exists('videos-lista.json'):
-              print("❌ Arquivo videos-lista.json não encontrado!")
+          if not os.path.exists('videos_lista.json'):
+              print("❌ Arquivo videos_lista.json não encontrado!")
               print("⚠️ Execute o Bot 1 primeiro para gerar a lista de vídeos.")
               exit(1)
 
           # Carregar lista de vídeos
-          with open('videos-lista.json', 'r', encoding='utf-8') as f:
+          with open('videos_lista.json', 'r', encoding='utf-8') as f:
               videos = json.load(f)
 
           # Encontrar primeiro vídeo não processado
@@ -155,7 +155,7 @@ jobs:
           video_atual['data_processamento'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
           # Salvar lista atualizada
-          with open('videos-lista.json', 'w', encoding='utf-8') as f:
+          with open('videos_lista.json', 'w', encoding='utf-8') as f:
               json.dump(videos, f, indent=2, ensure_ascii=False)
 
           print("\n✅ Processamento concluído!")
@@ -166,7 +166,7 @@ jobs:
         run: |
           git config --local user.email "bot@github.com"
           git config --local user.name "Flashback Bot"
-          git add videos-lista.json
+          git add videos_lista.json
           git diff --staged --quiet || git commit -m "✅ Vídeo processado - $(date '+%Y-%m-%d %H:%M')"
           git push
       
