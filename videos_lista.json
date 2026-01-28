@@ -13,7 +13,8 @@
     "titulo": "Lionel Richie - Penny Lover (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=T9zX1V2WYhE",
     "duracao": 295.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-01-28 00:55:09"
   },
   {
     "artista": "The Police",
