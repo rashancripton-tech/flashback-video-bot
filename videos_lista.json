@@ -48,7 +48,9 @@
     "titulo": "Queen – Bohemian Rhapsody (Official Video Remastered)",
     "url": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
     "duracao": 360.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-01-29 14:16:41",
+    "proxy_usado": "186.250.29.225"
   },
   {
     "artista": "The Police",
