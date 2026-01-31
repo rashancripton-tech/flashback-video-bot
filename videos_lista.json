@@ -66,7 +66,9 @@
     "titulo": "Guns N' Roses - Welcome To The Jungle",
     "url": "https://www.youtube.com/watch?v=o1tj2zJ2Wvg",
     "duracao": 280.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-01-31 13:59:25",
+    "proxy_usado": "186.250.29.225"
   },
   {
     "artista": "Iron Maiden",
