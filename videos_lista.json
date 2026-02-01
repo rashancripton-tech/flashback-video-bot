@@ -4,7 +4,9 @@
     "titulo": "Madonna - Music (Official Video)",
     "url": "https://www.youtube.com/watch?v=Sdz2oW0NMFk",
     "duracao": 287.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-01 14:15:14",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Madonna",
