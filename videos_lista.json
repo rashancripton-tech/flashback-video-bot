@@ -13,7 +13,9 @@
     "titulo": "Madonna - Vogue (Official Video)",
     "url": "https://www.youtube.com/watch?v=GuJQSAiODqI",
     "duracao": 294.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-02 14:41:32",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Genesis",
