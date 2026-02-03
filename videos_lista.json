@@ -22,7 +22,9 @@
     "titulo": "Grimes - Genesis",
     "url": "https://www.youtube.com/watch?v=1FH-q0I1fJY",
     "duracao": 333.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-03 14:53:19",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Lionel Richie",
