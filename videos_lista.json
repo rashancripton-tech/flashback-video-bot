@@ -31,7 +31,9 @@
     "titulo": "Lionel Richie - All Night Long (All Night)",
     "url": "https://www.youtube.com/watch?v=nqAvFx3NxUM",
     "duracao": 229.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-04 14:47:33",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Tears for Fears",
