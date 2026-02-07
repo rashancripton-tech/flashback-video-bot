@@ -58,7 +58,9 @@
     "titulo": "Queen - I Want To Break Free (Official Video) [4K Remastered]",
     "url": "https://www.youtube.com/watch?v=LYgPUmX3Tzg",
     "duracao": 268.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-07 14:17:24",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Dire Straits",
