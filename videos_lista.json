@@ -85,7 +85,9 @@
     "titulo": "Dire Straits - Calling Elvis (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=BUavFsfbFv8",
     "duracao": 286.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-10 16:11:55",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Lionel Richie",
