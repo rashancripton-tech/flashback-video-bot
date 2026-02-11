@@ -94,7 +94,9 @@
     "titulo": "Lionel Richie - Love Oh Love (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=aGA8pcE25qM",
     "duracao": 264.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-11 15:23:15",
+    "proxy_usado": "186.250.29.225"
   },
   {
     "artista": "Whitney Houston",
