@@ -103,7 +103,9 @@
     "titulo": "Whitney Houston - How Will I Know (Live from Welcome Home Heroes with Whitney Houston)",
     "url": "https://www.youtube.com/watch?v=m3-hY-hlhBg",
     "duracao": 273.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-12 15:07:46",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Phil Collins",
