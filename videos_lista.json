@@ -121,7 +121,9 @@
     "titulo": "Bryan Adams - (Everything I Do) I Do It For You",
     "url": "https://www.youtube.com/watch?v=Y0pdQU87dc8",
     "duracao": 393.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-14 14:09:42",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Culture Club",
