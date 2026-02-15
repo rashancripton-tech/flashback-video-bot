@@ -130,7 +130,9 @@
     "titulo": "Culture Club - Church Of The Poison Mind",
     "url": "https://www.youtube.com/watch?v=HVzAH0FtNwg",
     "duracao": 208.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-15 14:12:05",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Duran Duran",
