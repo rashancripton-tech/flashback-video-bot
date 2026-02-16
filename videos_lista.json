@@ -139,7 +139,9 @@
     "titulo": "Duran Duran - The Reflex (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=J5ebkj9x5Ko",
     "duracao": 271.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-16 14:56:04",
+    "proxy_usado": "177.139.193.9"
   },
   {
     "artista": "AC/DC",
