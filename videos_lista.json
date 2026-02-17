@@ -148,7 +148,9 @@
     "titulo": "AC/DC - Realize (Official Video)",
     "url": "https://www.youtube.com/watch?v=ga5qfM2-kog",
     "duracao": 219.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-17 14:40:59",
+    "proxy_usado": "186.250.29.225"
   },
   {
     "artista": "Dire Straits",
