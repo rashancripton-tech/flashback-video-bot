@@ -157,7 +157,9 @@
     "titulo": "Dire Straits - Sultans Of Swing (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=h0ffIJ7ZO4U",
     "duracao": 267.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-18 14:42:02",
+    "proxy_usado": "186.250.29.225"
   },
   {
     "artista": "Tina Turner",
