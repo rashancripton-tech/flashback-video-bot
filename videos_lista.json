@@ -166,7 +166,9 @@
     "titulo": "Tina Turner - What's Love Got To Do With It (Official Music Video) [HD Upgrade]",
     "url": "https://www.youtube.com/watch?v=oGpFcHTxjZs",
     "duracao": 227.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-20 14:49:04",
+    "proxy_usado": "177.22.250.160"
   },
   {
     "artista": "Michael Jackson",
