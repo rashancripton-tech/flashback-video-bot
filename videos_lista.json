@@ -175,7 +175,9 @@
     "titulo": "Michael Jackson - Jam (Official Video - Upscaled)",
     "url": "https://www.youtube.com/watch?v=JbHI1yI1Ndk",
     "duracao": 480.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-23 14:59:40",
+    "proxy_usado": "186.235.123.9"
   },
   {
     "artista": "Lionel Richie",
