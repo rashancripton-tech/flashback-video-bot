@@ -193,7 +193,9 @@
     "titulo": "Bruce Springsteen - I'm On Fire (Official Video)",
     "url": "https://www.youtube.com/watch?v=lrpXArn3hII",
     "duracao": 211.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-25 14:58:15",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "A-ha",
