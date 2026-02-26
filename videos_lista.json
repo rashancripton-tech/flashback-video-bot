@@ -202,7 +202,9 @@
     "titulo": "a-ha - You Are the One (Official Video)",
     "url": "https://www.youtube.com/watch?v=Wut994fxYA8",
     "duracao": 231.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-02-26 14:53:28",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "AC/DC",
