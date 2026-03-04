@@ -13,7 +13,9 @@
     "titulo": "Michael Jackson - Rock With You (Official Video - Upscaled)",
     "url": "https://www.youtube.com/watch?v=5X-Mrc2l1d0",
     "duracao": 202.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-03-04 12:54:43",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Bon Jovi",
