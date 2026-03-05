@@ -22,7 +22,9 @@
     "titulo": "Bon Jovi - She Don't Know Me",
     "url": "https://www.youtube.com/watch?v=omLgJe9cnCw",
     "duracao": 241.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-03-05 13:06:29",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Van Halen",
