@@ -49,7 +49,9 @@
     "titulo": "Darius Rucker and Lionel Richie - Stuck On You",
     "url": "https://www.youtube.com/watch?v=xI52NADJUnQ",
     "duracao": 200.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-03-08 12:52:28",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Bryan Adams",
