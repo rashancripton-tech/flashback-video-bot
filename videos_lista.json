@@ -76,7 +76,9 @@
     "titulo": "Eurythmics, Annie Lennox, Dave Stewart - Here Comes The Rain Again (Remastered)",
     "url": "https://www.youtube.com/watch?v=TzFnYcIqj6I",
     "duracao": 284.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-03-12 12:59:30",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Prince",
