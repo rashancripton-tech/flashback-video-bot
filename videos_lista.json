@@ -94,7 +94,9 @@
     "titulo": "Depeche Mode - It's No Good",
     "url": "https://www.youtube.com/watch?v=_-QPvffO1gs",
     "duracao": 273.0,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-03-14 13:08:01"
   },
   {
     "artista": "Tears for Fears",
