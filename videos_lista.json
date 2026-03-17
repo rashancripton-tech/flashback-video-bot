@@ -103,7 +103,9 @@
     "titulo": "Tears For Fears - Everybody Wants To Rule The World (Official Archive Video)",
     "url": "https://www.youtube.com/watch?v=znDgBy2mHbc",
     "duracao": 252.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-03-17 13:24:10",
+    "proxy_usado": "186.235.123.9"
   },
   {
     "artista": "U2",
