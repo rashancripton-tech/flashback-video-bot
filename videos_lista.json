@@ -121,7 +121,9 @@
     "titulo": "Van Halen - Jump (Official Music Video) [HD]",
     "url": "https://www.youtube.com/watch?v=SwYN7mTi6HM",
     "duracao": 243.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-03-19 13:05:27",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Michael Jackson",
