@@ -148,7 +148,9 @@
     "titulo": "Dire Straits - Walk Of Life (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=kd9TlGDZGkI",
     "duracao": 237.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-03-22 12:50:59",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Tina Turner",
