@@ -193,7 +193,9 @@
     "titulo": "Culture Club - Do You Really Want To Hurt Me",
     "url": "https://www.youtube.com/watch?v=2nXGPZaTKik",
     "duracao": 270.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-03-27 13:11:36",
+    "proxy_usado": "186.235.123.9"
   },
   {
     "artista": "Genesis",
