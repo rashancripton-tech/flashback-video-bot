@@ -1,325 +1,9 @@
 [
   {
-    "artista": "AC/DC",
-    "titulo": "AC/DC - Thunderstruck (Official Video)",
-    "url": "https://www.youtube.com/watch?v=v2AC41dglnM",
-    "duracao": 293.0,
-    "processado": true,
-    "data_processamento": "2026-03-02 12:59:57",
-    "proxy_usado": "187.49.178.237"
-  },
-  {
-    "artista": "Michael Jackson",
-    "titulo": "Michael Jackson - Rock With You (Official Video - Upscaled)",
-    "url": "https://www.youtube.com/watch?v=5X-Mrc2l1d0",
-    "duracao": 202.0,
-    "processado": true,
-    "data_processamento": "2026-03-04 12:54:43",
-    "proxy_usado": "187.49.178.237"
-  },
-  {
-    "artista": "Bon Jovi",
-    "titulo": "Bon Jovi - She Don't Know Me",
-    "url": "https://www.youtube.com/watch?v=omLgJe9cnCw",
-    "duracao": 241.0,
-    "processado": true,
-    "data_processamento": "2026-03-05 13:06:29",
-    "proxy_usado": "179.51.199.80"
-  },
-  {
-    "artista": "Van Halen",
-    "titulo": "Van Halen - Unchained (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=ojNrj-sWfpk",
-    "duracao": 277.0,
-    "processado": true,
-    "erro": "Falha em todos os 10 proxies",
-    "data_processamento": "2026-03-06 13:12:06"
-  },
-  {
-    "artista": "Billy Idol",
-    "titulo": "Billy Idol - Eyes Without A Face",
-    "url": "https://www.youtube.com/watch?v=9OFpfTd0EIs",
-    "duracao": 295.0,
-    "processado": true,
-    "data_processamento": "2026-03-07 12:47:21",
-    "proxy_usado": "187.49.178.237"
-  },
-  {
-    "artista": "Lionel Richie",
-    "titulo": "Darius Rucker and Lionel Richie - Stuck On You",
-    "url": "https://www.youtube.com/watch?v=xI52NADJUnQ",
-    "duracao": 200.0,
-    "processado": true,
-    "data_processamento": "2026-03-08 12:52:28",
-    "proxy_usado": "200.174.198.32"
-  },
-  {
-    "artista": "Bryan Adams",
-    "titulo": "Bryan Adams - Heaven (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=3eT464L1YRA",
-    "duracao": 241.0,
-    "processado": true,
-    "data_processamento": "2026-03-09 13:12:49",
-    "proxy_usado": "200.174.198.32"
-  },
-  {
-    "artista": "Bryan Adams",
-    "titulo": "Bryan Adams - Please Forgive Me (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=9EHAo6rEuas",
-    "duracao": 378.0,
-    "processado": true,
-    "data_processamento": "2026-03-11 13:13:28",
-    "proxy_usado": "177.22.250.160"
-  },
-  {
-    "artista": "Eurythmics",
-    "titulo": "Eurythmics, Annie Lennox, Dave Stewart - Here Comes The Rain Again (Remastered)",
-    "url": "https://www.youtube.com/watch?v=TzFnYcIqj6I",
-    "duracao": 284.0,
-    "processado": true,
-    "data_processamento": "2026-03-12 12:59:30",
-    "proxy_usado": "187.49.178.237"
-  },
-  {
-    "artista": "Prince",
-    "titulo": "Prince - U Got The Look (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=_jCuroTbqBI",
-    "duracao": 332.0,
-    "processado": true,
-    "data_processamento": "2026-03-13 13:08:25",
-    "proxy_usado": "186.235.123.3"
-  },
-  {
-    "artista": "Depeche Mode",
-    "titulo": "Depeche Mode - It's No Good",
-    "url": "https://www.youtube.com/watch?v=_-QPvffO1gs",
-    "duracao": 273.0,
-    "processado": true,
-    "erro": "Falha em todos os 10 proxies",
-    "data_processamento": "2026-03-14 13:08:01"
-  },
-  {
-    "artista": "Tears for Fears",
-    "titulo": "Tears For Fears - Everybody Wants To Rule The World (Official Archive Video)",
-    "url": "https://www.youtube.com/watch?v=znDgBy2mHbc",
-    "duracao": 252.0,
-    "processado": true,
-    "data_processamento": "2026-03-17 13:24:10",
-    "proxy_usado": "186.235.123.9"
-  },
-  {
-    "artista": "U2",
-    "titulo": "U2 - I Still Haven't Found What I'm Looking For (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=e3-5YC_oHjE",
-    "duracao": 276.0,
-    "processado": true,
-    "data_processamento": "2026-03-18 13:22:04",
-    "proxy_usado": "186.235.123.3"
-  },
-  {
-    "artista": "Van Halen",
-    "titulo": "Van Halen - Jump (Official Music Video) [HD]",
-    "url": "https://www.youtube.com/watch?v=SwYN7mTi6HM",
-    "duracao": 243.0,
-    "processado": true,
-    "data_processamento": "2026-03-19 13:05:27",
-    "proxy_usado": "187.49.178.237"
-  },
-  {
-    "artista": "Michael Jackson",
-    "titulo": "Michael Jackson - The Way You Make Me Feel (Official Video)",
-    "url": "https://www.youtube.com/watch?v=HzZ_urpj4As",
-    "duracao": 404.0,
-    "processado": true,
-    "data_processamento": "2026-03-20 13:11:33",
-    "proxy_usado": "200.174.198.32"
-  },
-  {
-    "artista": "wham!",
-    "titulo": "Wham! - Everything She Wants (Official Video)",
-    "url": "https://www.youtube.com/watch?v=Yf_Lwe6p-Cg",
-    "duracao": 398.0,
-    "processado": true,
-    "data_processamento": "2026-03-21 13:01:42",
-    "proxy_usado": "186.235.123.9"
-  },
-  {
-    "artista": "Dire Straits",
-    "titulo": "Dire Straits - Walk Of Life (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=kd9TlGDZGkI",
-    "duracao": 237.0,
-    "processado": true,
-    "data_processamento": "2026-03-22 12:50:59",
-    "proxy_usado": "187.49.178.237"
-  },
-  {
-    "artista": "Tina Turner",
-    "titulo": "Tina Turner - What's Love Got To Do With It (Official Video) [HD]",
-    "url": "https://www.youtube.com/watch?v=oGpFcHTxjZs",
-    "duracao": 227.0,
-    "processado": true,
-    "data_processamento": "2026-03-23 13:09:38",
-    "proxy_usado": "187.49.178.237"
-  },
-  {
-    "artista": "Eurythmics",
-    "titulo": "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video)",
-    "url": "https://www.youtube.com/watch?v=qeMFqkcPYcg",
-    "duracao": 215.0,
-    "processado": true,
-    "data_processamento": "2026-03-24 13:20:28",
-    "proxy_usado": "186.235.123.9"
-  },
-  {
-    "artista": "Billy Idol",
-    "titulo": "Billy Idol - Cradle Of Love",
-    "url": "https://www.youtube.com/watch?v=NCZuYS-9qaw",
-    "duracao": 322.0,
-    "processado": true,
-    "data_processamento": "2026-03-25 13:15:30",
-    "proxy_usado": "186.235.123.9"
-  },
-  {
-    "artista": "Genesis",
-    "titulo": "Genesis - That's All (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=Vzyn60Zns-E",
-    "duracao": 263.0,
-    "processado": true,
-    "data_processamento": "2026-03-26 13:25:39",
-    "proxy_usado": "186.235.123.3"
-  },
-  {
-    "artista": "Culture Club",
-    "titulo": "Culture Club - Do You Really Want To Hurt Me",
-    "url": "https://www.youtube.com/watch?v=2nXGPZaTKik",
-    "duracao": 270.0,
-    "processado": true,
-    "data_processamento": "2026-03-27 13:11:36",
-    "proxy_usado": "186.235.123.9"
-  },
-  {
-    "artista": "Genesis",
-    "titulo": "Genesis - No Reply (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=yjpSoEOUgKE",
-    "duracao": 242.0,
-    "processado": true,
-    "erro": "Falha em todos os 10 proxies",
-    "data_processamento": "2026-03-28 13:07:31"
-  },
-  {
-    "artista": "Guns N' Roses",
-    "titulo": "Guns N' Roses - Don't Cry",
-    "url": "https://www.youtube.com/watch?v=zRIbf6JqkNc",
-    "duracao": 314.0,
-    "processado": true,
-    "data_processamento": "2026-03-29 13:01:17",
-    "proxy_usado": "186.235.123.9"
-  },
-  {
-    "artista": "Guns N' Roses",
-    "titulo": "Guns N' Roses - Paradise City (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=Rbm6GXllBiw",
-    "duracao": 409.0,
-    "processado": true,
-    "data_processamento": "2026-03-31 13:26:23",
-    "proxy_usado": "200.174.198.32"
-  },
-  {
-    "artista": "Depeche Mode",
-    "titulo": "Depeche Mode - Useless (Official Video)",
-    "url": "https://www.youtube.com/watch?v=U2Kyu4XURaE",
-    "duracao": 294.0,
-    "processado": false
-  },
-  {
-    "artista": "Queen",
-    "titulo": "Queen - Don't Stop Me Now (Official Video)",
-    "url": "https://www.youtube.com/watch?v=HgzGwKwLmgM",
-    "duracao": 212.0,
-    "processado": false
-  },
-  {
-    "artista": "Tears for Fears",
-    "titulo": "Tears For Fears - Head Over Heels",
-    "url": "https://www.youtube.com/watch?v=CsHiG-43Fzg",
-    "duracao": 256.0,
-    "processado": false
-  },
-  {
-    "artista": "U2",
-    "titulo": "U2 - One (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=ftjEcrrf7r0",
+    "artista": "Madonna",
+    "titulo": "Madonna - Human Nature (Official Video)",
+    "url": "https://www.youtube.com/watch?v=XPL_qGqSJxA",
     "duracao": 274.0,
-    "processado": false
-  },
-  {
-    "artista": "Genesis",
-    "titulo": "Genesis - In Too Deep (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=qQIO3pBFfXI",
-    "duracao": 279.0,
-    "processado": false
-  },
-  {
-    "artista": "U2",
-    "titulo": "U2 - Even Better Than The Real Thing (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=vTxrgXWToZA",
-    "duracao": 221.0,
-    "processado": false
-  },
-  {
-    "artista": "Pet Shop Boys",
-    "titulo": "Pet Shop Boys - What Have I Done To Deserve This (Official Video) [HD REMASTERED]",
-    "url": "https://www.youtube.com/watch?v=Wn9E5i7l-Eg",
-    "duracao": 256.0,
-    "processado": false
-  },
-  {
-    "artista": "Bon Jovi",
-    "titulo": "Bon Jovi - You Give Love A Bad Name",
-    "url": "https://www.youtube.com/watch?v=KrZHPOeOxQQ",
-    "duracao": 231.0,
-    "processado": false
-  },
-  {
-    "artista": "Bryan Adams",
-    "titulo": "Bryan Adams - Somebody",
-    "url": "https://www.youtube.com/watch?v=VqhELBUdYqM",
-    "duracao": 283.0,
-    "processado": false
-  },
-  {
-    "artista": "Whitney Houston",
-    "titulo": "Whitney Houston - All The Man That I Need (Official HD Video)",
-    "url": "https://www.youtube.com/watch?v=3WH1Ma50QUk",
-    "duracao": 243.0,
-    "processado": false
-  },
-  {
-    "artista": "Queen",
-    "titulo": "Queen - Another One Bites The Dust (Official Video)",
-    "url": "https://www.youtube.com/watch?v=eqyUAtzS_6M",
-    "duracao": 221.0,
-    "processado": false
-  },
-  {
-    "artista": "Queen",
-    "titulo": "Queen - Somebody To Love (Official Video)",
-    "url": "https://www.youtube.com/watch?v=kijpcUv-b8M",
-    "duracao": 310.0,
-    "processado": false
-  },
-  {
-    "artista": "Tina Turner",
-    "titulo": "Tina Turner - Better Be Good To Me (Official Video) [HD]",
-    "url": "https://www.youtube.com/watch?v=qyU7BbQSm98",
-    "duracao": 243.0,
-    "processado": false
-  },
-  {
-    "artista": "Iron Maiden",
-    "titulo": "Iron Maiden – The Writing On The Wall (Official Video)",
-    "url": "https://www.youtube.com/watch?v=FhBnW7bZHEE",
-    "duracao": 445.0,
     "processado": false
   },
   {
@@ -330,45 +14,94 @@
     "processado": false
   },
   {
-    "artista": "Bryan Adams",
-    "titulo": "Bryan Adams - (Everything I Do) I Do It For You",
-    "url": "https://www.youtube.com/watch?v=Y0pdQU87dc8",
-    "duracao": 393.0,
+    "artista": "Metallica",
+    "titulo": "Metallica: Turn the Page (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=qPOTEs_yTJo",
+    "duracao": 350.0,
     "processado": false
   },
   {
-    "artista": "Phil Collins",
-    "titulo": "Phil Collins - Take Me Home (Official Music Video) [HD Upgrade]",
-    "url": "https://www.youtube.com/watch?v=sRY1NG1P_kw",
-    "duracao": 370.0,
+    "artista": "Van Halen",
+    "titulo": "Van Halen - Jump (Official Music Video) [HD]",
+    "url": "https://www.youtube.com/watch?v=SwYN7mTi6HM",
+    "duracao": 243.0,
     "processado": false
   },
   {
-    "artista": "Lionel Richie",
-    "titulo": "Lionel Richie & Tim McGraw - Sail On",
-    "url": "https://www.youtube.com/watch?v=aRpjqxXkTJU",
-    "duracao": 235.0,
+    "artista": "Queen",
+    "titulo": "Queen - I'm Going Slightly Mad (Official Video)",
+    "url": "https://www.youtube.com/watch?v=Od6hY_50Dh0",
+    "duracao": 272.0,
     "processado": false
   },
   {
-    "artista": "The Cure",
-    "titulo": "The Cure - Just Like Heaven",
-    "url": "https://www.youtube.com/watch?v=n3nPiBai66M",
-    "duracao": 207.0,
+    "artista": "Bon Jovi",
+    "titulo": "Bon Jovi - You Give Love A Bad Name",
+    "url": "https://www.youtube.com/watch?v=KrZHPOeOxQQ",
+    "duracao": 231.0,
     "processado": false
   },
   {
-    "artista": "Phil Collins",
-    "titulo": "Phil Collins - You Can't Hurry Love (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=C9IwBJYTwQ0",
-    "duracao": 172.0,
+    "artista": "Bon Jovi",
+    "titulo": "Bon Jovi, Jennifer Nettles - Who Says You Can't Go Home",
+    "url": "https://www.youtube.com/watch?v=5CeX5VEo10c",
+    "duracao": 233.0,
     "processado": false
   },
   {
     "artista": "Tears for Fears",
-    "titulo": "Tears For Fears - No Small Thing (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=iemvnxDjrBY",
-    "duracao": 281.0,
+    "titulo": "Tears For Fears - Shout (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=Ye7FKc1JQe4",
+    "duracao": 360.0,
+    "processado": false
+  },
+  {
+    "artista": "Dire Straits",
+    "titulo": "Dire Straits - Wild West End (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=T4Ad_J_2l0w",
+    "duracao": 282.0,
+    "processado": false
+  },
+  {
+    "artista": "Eurythmics",
+    "titulo": "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video)",
+    "url": "https://www.youtube.com/watch?v=qeMFqkcPYcg",
+    "duracao": 215.0,
+    "processado": false
+  },
+  {
+    "artista": "Genesis",
+    "titulo": "Genesis - In Too Deep (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=qQIO3pBFfXI",
+    "duracao": 279.0,
+    "processado": false
+  },
+  {
+    "artista": "Pet Shop Boys",
+    "titulo": "Pet Shop Boys - Heart (Official Video) [HD Upgrade]",
+    "url": "https://www.youtube.com/watch?v=vlIsU7ImU0w",
+    "duracao": 266.0,
+    "processado": false
+  },
+  {
+    "artista": "Culture Club",
+    "titulo": "Culture Club - Karma Chameleon (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=JmcA9LIIXWw",
+    "duracao": 239.0,
+    "processado": false
+  },
+  {
+    "artista": "Tina Turner",
+    "titulo": "Tina Turner - Break Every Rule (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=w859A3YmBkE",
+    "duracao": 291.0,
+    "processado": false
+  },
+  {
+    "artista": "Duran Duran",
+    "titulo": "Duran Duran - Come Undone (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=Epj84QVw2rc",
+    "duracao": 263.0,
     "processado": false
   },
   {
@@ -379,122 +112,59 @@
     "processado": false
   },
   {
-    "artista": "Bruce Springsteen",
-    "titulo": "Bruce Springsteen - Dancing In the Dark (Official Video)",
-    "url": "https://www.youtube.com/watch?v=129kuDCQtHs",
-    "duracao": 239.0,
+    "artista": "Depeche Mode",
+    "titulo": "Depeche Mode - Precious (Remastered)",
+    "url": "https://www.youtube.com/watch?v=8yn3ViE6mhY",
+    "duracao": 249.0,
     "processado": false
   },
   {
-    "artista": "Lionel Richie",
-    "titulo": "Lionel Richie - Hello (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=mHONNcZbwDY",
-    "duracao": 327.0,
+    "artista": "Metallica",
+    "titulo": "Metallica: One (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=WM8bTdBs-cw",
+    "duracao": 465.0,
     "processado": false
   },
   {
     "artista": "Cyndi Lauper",
-    "titulo": "Cyndi Lauper - She Bop (Official HD Video)",
-    "url": "https://www.youtube.com/watch?v=KFq4E9XTueY",
-    "duracao": 278.0,
+    "titulo": "Cyndi Lauper - Girls Just Want To Have Fun (Official Video)",
+    "url": "https://www.youtube.com/watch?v=PIb6AZdTr-A",
+    "duracao": 267.0,
     "processado": false
   },
   {
-    "artista": "Bon Jovi",
-    "titulo": "Bon Jovi - Always (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=9BMwcO6_hyA",
-    "duracao": 366.0,
+    "artista": "Prince",
+    "titulo": "Prince - Little Red Corvette (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=v0KpfrJE4zw",
+    "duracao": 190.0,
+    "processado": false
+  },
+  {
+    "artista": "U2",
+    "titulo": "U2 - Mysterious Ways (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=TxcDTUMLQJI",
+    "duracao": 243.0,
     "processado": false
   },
   {
     "artista": "Queen",
-    "titulo": "Queen - I Want To Break Free (Official Video) [4K Remastered]",
-    "url": "https://www.youtube.com/watch?v=LYgPUmX3Tzg",
-    "duracao": 268.0,
+    "titulo": "Queen - Somebody To Love (Official Video)",
+    "url": "https://www.youtube.com/watch?v=kijpcUv-b8M",
+    "duracao": 310.0,
     "processado": false
   },
   {
-    "artista": "A-ha",
-    "titulo": "a-ha - Hunting High and Low (Official Video)",
-    "url": "https://www.youtube.com/watch?v=s6VaeFCxta8",
-    "duracao": 229.0,
-    "processado": false
-  },
-  {
-    "artista": "AC/DC",
-    "titulo": "AC/DC - It's A Long Way To The Top [Official Music Video], Full HD (Remaster, Resync and Upscale)",
-    "url": "https://www.youtube.com/watch?v=g-qkY2yj4_A",
-    "duracao": 314.0,
-    "processado": false
-  },
-  {
-    "artista": "Culture Club",
-    "titulo": "Culture Club - It's A Miracle",
-    "url": "https://www.youtube.com/watch?v=YewVugPHon4",
-    "duracao": 205.0,
-    "processado": false
-  },
-  {
-    "artista": "Billy Idol",
-    "titulo": "Billy Idol - Dancing With Myself",
-    "url": "https://www.youtube.com/watch?v=FG1NrQYXjLU",
-    "duracao": 204.0,
-    "processado": false
-  },
-  {
-    "artista": "Tears for Fears",
-    "titulo": "Tears For Fears - Everybody Wants To Rule The World (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=aGCdLKXNF3w",
-    "duracao": 291.0,
-    "processado": false
-  },
-  {
-    "artista": "Billy Idol",
-    "titulo": "Billy Idol - Rebel Yell",
-    "url": "https://www.youtube.com/watch?v=VdphvuyaV_I",
-    "duracao": 293.0,
-    "processado": false
-  },
-  {
-    "artista": "The Police",
-    "titulo": "The Police - Every Breath You Take (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=OMOGaugKpzs",
-    "duracao": 229.0,
-    "processado": false
-  },
-  {
-    "artista": "Iron Maiden",
-    "titulo": "Iron Maiden - Wasted Years (Official Video)",
-    "url": "https://www.youtube.com/watch?v=Ij99dud8-0A",
-    "duracao": 306.0,
-    "processado": false
-  },
-  {
-    "artista": "Van Halen",
-    "titulo": "Van Halen - Panama (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=fuKDBPw8wQA",
-    "duracao": 223.0,
-    "processado": false
-  },
-  {
-    "artista": "Whitney Houston",
-    "titulo": "Whitney Houston - Where Do Broken Hearts Go (Official Video)",
-    "url": "https://www.youtube.com/watch?v=wa3tfVjGCQ8",
-    "duracao": 278.0,
-    "processado": false
-  },
-  {
-    "artista": "George Michael",
-    "titulo": "George Michael - Fastlove (Official Video)",
-    "url": "https://www.youtube.com/watch?v=SHAQlFq6TFg",
-    "duracao": 305.0,
+    "artista": "Metallica",
+    "titulo": "Metallica - Until It Sleeps (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=F3WIHtOmkBg",
+    "duracao": 274.0,
     "processado": false
   },
   {
     "artista": "Duran Duran",
-    "titulo": "Duran Duran - Hungry like the Wolf (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=oJL-lCzEXgI",
-    "duracao": 223.0,
+    "titulo": "Duran Duran - Girls On Film (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=KCjMZMxNr-0",
+    "duracao": 208.0,
     "processado": false
   },
   {
@@ -505,52 +175,59 @@
     "processado": false
   },
   {
-    "artista": "Madonna",
-    "titulo": "Madonna - Vogue (Official Video)",
-    "url": "https://www.youtube.com/watch?v=GuJQSAiODqI",
-    "duracao": 294.0,
-    "processado": false
-  },
-  {
-    "artista": "Guns N' Roses",
-    "titulo": "Guns N' Roses - Sweet Child O' Mine (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
-    "duracao": 303.0,
-    "processado": false
-  },
-  {
-    "artista": "wham!",
-    "titulo": "Wham! - Wake Me Up Before You Go-Go (Official Video)",
-    "url": "https://www.youtube.com/watch?v=pIgZ7gMze7A",
-    "duracao": 234.0,
+    "artista": "Tina Turner",
+    "titulo": "Tina Turner - I Don't Wanna Lose You (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=pLj5sBfGuQY",
+    "duracao": 257.0,
     "processado": false
   },
   {
     "artista": "The Police",
-    "titulo": "The Police - Don't Stand So Close To Me (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=KNIZofPB8ZM",
-    "duracao": 237.0,
+    "titulo": "The Police - Invisible Sun (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=1VuDjJ9KIxM",
+    "duracao": 266.0,
+    "processado": false
+  },
+  {
+    "artista": "Cyndi Lauper",
+    "titulo": "Cyndi Lauper - The Goonies 'R' Good Enough",
+    "url": "https://www.youtube.com/watch?v=LxLhytQ67fs",
+    "duracao": 440.0,
+    "processado": false
+  },
+  {
+    "artista": "Bryan Adams",
+    "titulo": "Bryan Adams - Run To You",
+    "url": "https://www.youtube.com/watch?v=nCBASt507WA",
+    "duracao": 226.0,
+    "processado": false
+  },
+  {
+    "artista": "The Cure",
+    "titulo": "The Cure - Lovesong",
+    "url": "https://www.youtube.com/watch?v=ks_qOI0lzho",
+    "duracao": 209.0,
+    "processado": false
+  },
+  {
+    "artista": "Bruce Springsteen",
+    "titulo": "Bruce Springsteen - I'm On Fire (Official Video)",
+    "url": "https://www.youtube.com/watch?v=lrpXArn3hII",
+    "duracao": 211.0,
+    "processado": false
+  },
+  {
+    "artista": "Billy Idol",
+    "titulo": "Billy Idol - Cradle Of Love",
+    "url": "https://www.youtube.com/watch?v=NCZuYS-9qaw",
+    "duracao": 322.0,
     "processado": false
   },
   {
     "artista": "A-ha",
-    "titulo": "a-ha - Lifelines (Official Video)",
-    "url": "https://www.youtube.com/watch?v=DCkbfyk6XGc",
-    "duracao": 265.0,
-    "processado": false
-  },
-  {
-    "artista": "Van Halen",
-    "titulo": "Van Halen   Feels So Good Official Music Video WIDESCREEN",
-    "url": "https://www.youtube.com/watch?v=6eb2XW0et8g",
-    "duracao": 238.0,
-    "processado": false
-  },
-  {
-    "artista": "Dire Straits",
-    "titulo": "Dire Straits - Money For Nothing (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=wTP2RUD_cL0",
-    "duracao": 279.0,
+    "titulo": "a-ha - The Sun Always Shines on T.V. (Official Video)",
+    "url": "https://www.youtube.com/watch?v=a3ir9HC9vYg",
+    "duracao": 280.0,
     "processado": false
   },
   {
@@ -562,65 +239,9 @@
   },
   {
     "artista": "Duran Duran",
-    "titulo": "Duran Duran - The Reflex (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=J5ebkj9x5Ko",
-    "duracao": 271.0,
-    "processado": false
-  },
-  {
-    "artista": "Prince",
-    "titulo": "Prince - I Wanna Be Your Lover (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=Rp8WL621uGM",
-    "duracao": 178.0,
-    "processado": false
-  },
-  {
-    "artista": "Depeche Mode",
-    "titulo": "Depeche Mode - Enjoy the Silence",
-    "url": "https://www.youtube.com/watch?v=aGSKrC7dGcY",
-    "duracao": 280.0,
-    "processado": false
-  },
-  {
-    "artista": "Iron Maiden",
-    "titulo": "Iron Maiden - Can I Play With Madness (Official Video)",
-    "url": "https://www.youtube.com/watch?v=Kvqr366Op3k",
-    "duracao": 218.0,
-    "processado": false
-  },
-  {
-    "artista": "Whitney Houston",
-    "titulo": "Whitney Houston - Saving All My Love For You (Official HD Video)",
-    "url": "https://www.youtube.com/watch?v=ewxmv2tyeRs",
-    "duracao": 238.0,
-    "processado": false
-  },
-  {
-    "artista": "Queen",
-    "titulo": "Queen – Bohemian Rhapsody (Official Video Remastered)",
-    "url": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "duracao": 360.0,
-    "processado": false
-  },
-  {
-    "artista": "Metallica",
-    "titulo": "Metallica: One (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=WM8bTdBs-cw",
-    "duracao": 465.0,
-    "processado": false
-  },
-  {
-    "artista": "Lionel Richie",
-    "titulo": "Lionel Richie - All Night Long (All Night)",
-    "url": "https://www.youtube.com/watch?v=nqAvFx3NxUM",
-    "duracao": 229.0,
-    "processado": false
-  },
-  {
-    "artista": "Madonna",
-    "titulo": "Madonna - La Isla Bonita (Official Video)",
-    "url": "https://www.youtube.com/watch?v=zpzdgmqIHOQ",
-    "duracao": 242.0,
+    "titulo": "Duran Duran - Hungry like the Wolf (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=oJL-lCzEXgI",
+    "duracao": 223.0,
     "processado": false
   },
   {
@@ -631,73 +252,10 @@
     "processado": false
   },
   {
-    "artista": "Bruce Springsteen",
-    "titulo": "Bruce Springsteen - Born in the U.S.A. (Official Video)",
-    "url": "https://www.youtube.com/watch?v=EPhWR4d3FJQ",
-    "duracao": 284.0,
-    "processado": false
-  },
-  {
-    "artista": "Metallica",
-    "titulo": "Metallica: Nothing Else Matters (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=tAGnKpE4NCI",
-    "duracao": 386.0,
-    "processado": false
-  },
-  {
-    "artista": "The Cure",
-    "titulo": "The Cure - Lovesong",
-    "url": "https://www.youtube.com/watch?v=ks_qOI0lzho",
-    "duracao": 209.0,
-    "processado": false
-  },
-  {
     "artista": "Genesis",
-    "titulo": "Genesis - Mama (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=7lXH0nwirio",
-    "duracao": 315.0,
-    "processado": false
-  },
-  {
-    "artista": "Bon Jovi",
-    "titulo": "Bon Jovi - Livin' On A Prayer",
-    "url": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
-    "duracao": 249.0,
-    "processado": false
-  },
-  {
-    "artista": "Bruce Springsteen",
-    "titulo": "Bruce Springsteen - I'm On Fire (Official Video)",
-    "url": "https://www.youtube.com/watch?v=lrpXArn3hII",
-    "duracao": 211.0,
-    "processado": false
-  },
-  {
-    "artista": "Bon Jovi",
-    "titulo": "Bon Jovi - Wanted Dead Or Alive (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=SRvCvsRp5ho",
-    "duracao": 250.0,
-    "processado": false
-  },
-  {
-    "artista": "Cyndi Lauper",
-    "titulo": "Cyndi Lauper - True Colors (Official HD Video)",
-    "url": "https://www.youtube.com/watch?v=LPn0KFlbqX8",
-    "duracao": 247.0,
-    "processado": false
-  },
-  {
-    "artista": "Prince",
-    "titulo": "Prince and the Revolution - When Doves Cry (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=UG3VcCAlUgE",
-    "duracao": 225.0,
-    "processado": false
-  },
-  {
-    "artista": "AC/DC",
-    "titulo": "AC/DC - Shot In The Dark (Official Video)",
-    "url": "https://www.youtube.com/watch?v=54LEywabkl4",
-    "duracao": 196.0,
+    "titulo": "Genesis - Abacab (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=suCNZe3Gwkw",
+    "duracao": 251.0,
     "processado": false
   },
   {
@@ -708,59 +266,94 @@
     "processado": false
   },
   {
-    "artista": "Tears for Fears",
-    "titulo": "Tears For Fears - Shout (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=Ye7FKc1JQe4",
-    "duracao": 360.0,
+    "artista": "The Police",
+    "titulo": "The Police - Every Little Thing She Does Is Magic (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=aENX1Sf3fgQ",
+    "duracao": 261.0,
+    "processado": false
+  },
+  {
+    "artista": "Lionel Richie",
+    "titulo": "Lionel Richie - Dancing On The Ceiling",
+    "url": "https://www.youtube.com/watch?v=ovo6zwv6DX4",
+    "duracao": 316.0,
     "processado": false
   },
   {
     "artista": "Bryan Adams",
-    "titulo": "Bryan Adams - Run To You",
-    "url": "https://www.youtube.com/watch?v=nCBASt507WA",
-    "duracao": 226.0,
+    "titulo": "Bryan Adams - Heaven (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=3eT464L1YRA",
+    "duracao": 241.0,
     "processado": false
   },
   {
-    "artista": "Tina Turner",
-    "titulo": "Tina Turner - What You Get Is What You See (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=e0GVixJvt-g",
-    "duracao": 248.0,
+    "artista": "Tears for Fears",
+    "titulo": "Tears For Fears - Sowing The Seeds Of Love",
+    "url": "https://www.youtube.com/watch?v=VAtGOESO7W8",
+    "duracao": 332.0,
+    "processado": false
+  },
+  {
+    "artista": "Billy Idol",
+    "titulo": "Billy Idol - Eyes Without A Face",
+    "url": "https://www.youtube.com/watch?v=9OFpfTd0EIs",
+    "duracao": 295.0,
+    "processado": false
+  },
+  {
+    "artista": "AC/DC",
+    "titulo": "AC/DC - It's A Long Way To The Top [Official Music Video], Full HD (Remaster, Resync and Upscale)",
+    "url": "https://www.youtube.com/watch?v=g-qkY2yj4_A",
+    "duracao": 314.0,
+    "processado": false
+  },
+  {
+    "artista": "The Cure",
+    "titulo": "The Cure - Just Like Heaven",
+    "url": "https://www.youtube.com/watch?v=n3nPiBai66M",
+    "duracao": 207.0,
+    "processado": false
+  },
+  {
+    "artista": "AC/DC",
+    "titulo": "AC/DC - Let There Be Rock (Official Video)",
+    "url": "https://www.youtube.com/watch?v=3f2g4RMfhS0",
+    "duracao": 369.0,
+    "processado": false
+  },
+  {
+    "artista": "Duran Duran",
+    "titulo": "Duran Duran - Rio (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=nTizYn3-QN0",
+    "duracao": 305.0,
     "processado": false
   },
   {
     "artista": "Cyndi Lauper",
-    "titulo": "Cyndi Lauper - The Goonies 'R' Good Enough",
-    "url": "https://www.youtube.com/watch?v=LxLhytQ67fs",
-    "duracao": 440.0,
+    "titulo": "Cyndi Lauper - She Bop (Official HD Video)",
+    "url": "https://www.youtube.com/watch?v=KFq4E9XTueY",
+    "duracao": 278.0,
     "processado": false
   },
   {
-    "artista": "Depeche Mode",
-    "titulo": "Depeche Mode - Policy of Truth (Official Video)",
-    "url": "https://www.youtube.com/watch?v=M2VBmHOYpV8",
-    "duracao": 249.0,
+    "artista": "U2",
+    "titulo": "U2 - In God's Country (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=sERtcG-TUCU",
+    "duracao": 177.0,
     "processado": false
   },
   {
-    "artista": "Metallica",
-    "titulo": "Metallica: The Memory Remains (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=RDN4awrpPQQ",
-    "duracao": 279.0,
+    "artista": "Culture Club",
+    "titulo": "Culture Club - Time (Clock Of The Heart)",
+    "url": "https://www.youtube.com/watch?v=8tI1_KlO6xI",
+    "duracao": 219.0,
     "processado": false
   },
   {
-    "artista": "Cyndi Lauper",
-    "titulo": "Cyndi Lauper - Time After Time (Official HD Video)",
-    "url": "https://www.youtube.com/watch?v=VdQY7BusJNU",
-    "duracao": 297.0,
-    "processado": false
-  },
-  {
-    "artista": "A-ha",
-    "titulo": "a-ha - The Sun Always Shines on T.V. (Official Video)",
-    "url": "https://www.youtube.com/watch?v=a3ir9HC9vYg",
-    "duracao": 280.0,
+    "artista": "Bryan Adams",
+    "titulo": "Bryan Adams - Summer Of 69 (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=9f06QZCVUHg",
+    "duracao": 208.0,
     "processado": false
   },
   {
@@ -771,17 +364,59 @@
     "processado": false
   },
   {
-    "artista": "The Cure",
-    "titulo": "The Cure - A Night Like This (HD Remastered)",
-    "url": "https://www.youtube.com/watch?v=hkkO2uiOEUM",
-    "duracao": 251.0,
+    "artista": "wham!",
+    "titulo": "Wham! - Wake Me Up Before You Go-Go (Official Video)",
+    "url": "https://www.youtube.com/watch?v=pIgZ7gMze7A",
+    "duracao": 234.0,
     "processado": false
   },
   {
-    "artista": "Phil Collins",
-    "titulo": "Phil Collins Against All Odds (Official Music Video 1984)",
-    "url": "https://www.youtube.com/watch?v=SWSQS06i7-w",
-    "duracao": 207.0,
+    "artista": "Whitney Houston",
+    "titulo": "Whitney Houston - I Wanna Dance With Somebody (Official 4K Video)",
+    "url": "https://www.youtube.com/watch?v=eH3giaIzONA",
+    "duracao": 315.0,
+    "processado": false
+  },
+  {
+    "artista": "Pet Shop Boys",
+    "titulo": "Pet Shop Boys - Flamboyant (Official Video) [HD Upgrade]",
+    "url": "https://www.youtube.com/watch?v=H-xdjALeASU",
+    "duracao": 238.0,
+    "processado": false
+  },
+  {
+    "artista": "Madonna",
+    "titulo": "Madonna - Hung Up (Official Video) [HD]",
+    "url": "https://www.youtube.com/watch?v=EDwb9jOVRtU",
+    "duracao": 334.0,
+    "processado": false
+  },
+  {
+    "artista": "Van Halen",
+    "titulo": "Van Halen - Panama (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=fuKDBPw8wQA",
+    "duracao": 223.0,
+    "processado": false
+  },
+  {
+    "artista": "Iron Maiden",
+    "titulo": "Iron Maiden - Wasted Years (Official Video)",
+    "url": "https://www.youtube.com/watch?v=Ij99dud8-0A",
+    "duracao": 306.0,
+    "processado": false
+  },
+  {
+    "artista": "Queen",
+    "titulo": "Queen - Killer Queen (Top Of The Pops, 1974)",
+    "url": "https://www.youtube.com/watch?v=2ZBtPf7FOoM",
+    "duracao": 192.0,
+    "processado": false
+  },
+  {
+    "artista": "Tears for Fears",
+    "titulo": "Tears For Fears - Mad World (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=u1ZvPSpLxCg",
+    "duracao": 226.0,
     "processado": false
   },
   {
@@ -792,66 +427,80 @@
     "processado": false
   },
   {
+    "artista": "Culture Club",
+    "titulo": "Culture Club - Do You Really Want To Hurt Me",
+    "url": "https://www.youtube.com/watch?v=2nXGPZaTKik",
+    "duracao": 270.0,
+    "processado": false
+  },
+  {
+    "artista": "Dire Straits",
+    "titulo": "Dire Straits - Sultans Of Swing (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=h0ffIJ7ZO4U",
+    "duracao": 267.0,
+    "processado": false
+  },
+  {
+    "artista": "AC/DC",
+    "titulo": "AC/DC - Back In Black (Official 4K Video)",
+    "url": "https://www.youtube.com/watch?v=pAgnJDJN4VA",
+    "duracao": 254.0,
+    "processado": false
+  },
+  {
+    "artista": "Queen",
+    "titulo": "Queen - I Want To Break Free (Official Video) [4K Remastered]",
+    "url": "https://www.youtube.com/watch?v=LYgPUmX3Tzg",
+    "duracao": 268.0,
+    "processado": false
+  },
+  {
+    "artista": "Dire Straits",
+    "titulo": "Dire Straits - Money For Nothing (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=wTP2RUD_cL0",
+    "duracao": 279.0,
+    "processado": false
+  },
+  {
     "artista": "Eurythmics",
-    "titulo": "Eurythmics, Annie Lennox, Dave Stewart - Love Is a Stranger (Official Video)",
-    "url": "https://www.youtube.com/watch?v=o6f593X6rv8",
-    "duracao": 231.0,
-    "processado": false
-  },
-  {
-    "artista": "Culture Club",
-    "titulo": "Culture Club - Church Of The Poison Mind",
-    "url": "https://www.youtube.com/watch?v=HVzAH0FtNwg",
-    "duracao": 208.0,
-    "processado": false
-  },
-  {
-    "artista": "Pet Shop Boys",
-    "titulo": "Pet Shop Boys - It's A Sin (Official Video) [HD REMASTERED]",
-    "url": "https://www.youtube.com/watch?v=dRHetRTOD1Q",
-    "duracao": 301.0,
-    "processado": false
-  },
-  {
-    "artista": "Culture Club",
-    "titulo": "Culture Club - Karma Chameleon (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=JmcA9LIIXWw",
-    "duracao": 239.0,
-    "processado": false
-  },
-  {
-    "artista": "The Cure",
-    "titulo": "The Cure - In Between Days",
-    "url": "https://www.youtube.com/watch?v=scif2vfg1ug",
-    "duracao": 189.0,
+    "titulo": "Eurythmics, Annie Lennox, Dave Stewart - Missionary Man (Official Video)",
+    "url": "https://www.youtube.com/watch?v=0-Q3cp3cp88",
+    "duracao": 262.0,
     "processado": false
   },
   {
     "artista": "Genesis",
-    "titulo": "Genesis - Land of Confusion (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=Yq7FKO5DlV0",
-    "duracao": 329.0,
+    "titulo": "Genesis - I Can't Dance (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=hGI2d31M7Ns",
+    "duracao": 291.0,
     "processado": false
   },
   {
-    "artista": "Pet Shop Boys",
-    "titulo": "Pet Shop Boys - Go West (Official Video) [HD REMASTERED]",
-    "url": "https://www.youtube.com/watch?v=LNBjMRvOB5M",
-    "duracao": 292.0,
+    "artista": "Van Halen",
+    "titulo": "Van Halen - Right Now (Official Music Video) [HD Remaster]",
+    "url": "https://www.youtube.com/watch?v=gU7d2EHV_OQ",
+    "duracao": 261.0,
     "processado": false
   },
   {
-    "artista": "George Michael",
-    "titulo": "George Michael - Freedom! ’90 (Official Video)",
-    "url": "https://www.youtube.com/watch?v=diYAc7gB-0A",
-    "duracao": 400.0,
+    "artista": "Lionel Richie",
+    "titulo": "Lionel Richie - Hello (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=mHONNcZbwDY",
+    "duracao": 327.0,
     "processado": false
   },
   {
-    "artista": "Duran Duran",
-    "titulo": "Duran Duran - Come Undone (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=Epj84QVw2rc",
-    "duracao": 263.0,
+    "artista": "Bruce Springsteen",
+    "titulo": "Bruce Springsteen - Brilliant Disguise (Official Video)",
+    "url": "https://www.youtube.com/watch?v=idnJnjV_8rg",
+    "duracao": 255.0,
+    "processado": false
+  },
+  {
+    "artista": "Depeche Mode",
+    "titulo": "Depeche Mode - Policy of Truth (Official Video)",
+    "url": "https://www.youtube.com/watch?v=M2VBmHOYpV8",
+    "duracao": 249.0,
     "processado": false
   },
   {
@@ -863,163 +512,37 @@
   },
   {
     "artista": "Duran Duran",
-    "titulo": "Duran Duran - Ordinary World (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=FqIACCH20JU",
-    "duracao": 280.0,
+    "titulo": "Duran Duran - Is There Something I Should Know? (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=3M0hogZyRyU",
+    "duracao": 276.0,
     "processado": false
   },
   {
-    "artista": "Cyndi Lauper",
-    "titulo": "Cyndi Lauper - Girls Just Want To Have Fun (Official Video)",
-    "url": "https://www.youtube.com/watch?v=PIb6AZdTr-A",
-    "duracao": 267.0,
+    "artista": "George Michael",
+    "titulo": "George Michael - Faith (Official Video)",
+    "url": "https://www.youtube.com/watch?v=6Cs3Pvmmv0E",
+    "duracao": 224.0,
+    "processado": false
+  },
+  {
+    "artista": "Madonna",
+    "titulo": "Madonna - Lucky Star (Official Video)",
+    "url": "https://www.youtube.com/watch?v=ThHz9wlBeLU",
+    "duracao": 243.0,
     "processado": false
   },
   {
     "artista": "Metallica",
-    "titulo": "Metallica - I Disappear (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=ekZTW2r4vb4",
-    "duracao": 269.0,
+    "titulo": "Metallica: Spit Out the Bone (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=m46Z0-HXySo",
+    "duracao": 431.0,
     "processado": false
   },
   {
-    "artista": "Dire Straits",
-    "titulo": "Dire Straits - Sultans Of Swing (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=h0ffIJ7ZO4U",
-    "duracao": 267.0,
-    "processado": false
-  },
-  {
-    "artista": "The Police",
-    "titulo": "The Police - Wrapped Around Your Finger (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=svWINSRhQU0",
-    "duracao": 305.0,
-    "processado": false
-  },
-  {
-    "artista": "Madonna",
-    "titulo": "Madonna - Hung Up (Official Video) [HD]",
-    "url": "https://www.youtube.com/watch?v=EDwb9jOVRtU",
-    "duracao": 334.0,
-    "processado": false
-  },
-  {
-    "artista": "Lionel Richie",
-    "titulo": "Lionel Richie - I Call It Love (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=s47n8E2BuWc",
-    "duracao": 203.0,
-    "processado": false
-  },
-  {
-    "artista": "Van Halen",
-    "titulo": "Van Halen - You Really Got Me (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=9X6e7uctAww",
-    "duracao": 206.0,
-    "processado": false
-  },
-  {
-    "artista": "Duran Duran",
-    "titulo": "Duran Duran - Rio (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=nTizYn3-QN0",
-    "duracao": 305.0,
-    "processado": false
-  },
-  {
-    "artista": "Michael Jackson",
-    "titulo": "Michael Jackson - Leave Me Alone (Official Video)",
-    "url": "https://www.youtube.com/watch?v=crbFmpezO4A",
-    "duracao": 279.0,
-    "processado": false
-  },
-  {
-    "artista": "George Michael",
-    "titulo": "George Michael - Careless Whisper (Official Video)",
-    "url": "https://www.youtube.com/watch?v=izGwDsrQ1eQ",
-    "duracao": 301.0,
-    "processado": false
-  },
-  {
-    "artista": "Tina Turner",
-    "titulo": "Tina Turner - I Don't Wanna Fight (Official Music Video) [HD Upgrade]",
-    "url": "https://www.youtube.com/watch?v=Yj3WhcGoSA4",
-    "duracao": 266.0,
-    "processado": false
-  },
-  {
-    "artista": "Prince",
-    "titulo": "Prince - Little Red Corvette (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=v0KpfrJE4zw",
-    "duracao": 190.0,
-    "processado": false
-  },
-  {
-    "artista": "AC/DC",
-    "titulo": "AC/DC - Realize (Official Video)",
-    "url": "https://www.youtube.com/watch?v=ga5qfM2-kog",
-    "duracao": 219.0,
-    "processado": false
-  },
-  {
-    "artista": "George Michael",
-    "titulo": "George Michael - Outside (Official Video)",
-    "url": "https://www.youtube.com/watch?v=gwZAYdHcDtU",
-    "duracao": 329.0,
-    "processado": false
-  },
-  {
-    "artista": "Madonna",
-    "titulo": "Madonna - Don't Tell Me (Official Video) [HD]",
-    "url": "https://www.youtube.com/watch?v=gLFWRDsx5AI",
-    "duracao": 280.0,
-    "processado": false
-  },
-  {
-    "artista": "Iron Maiden",
-    "titulo": "Iron Maiden - The Trooper (Official Video)",
-    "url": "https://www.youtube.com/watch?v=X4bgXH3sJ2Q",
-    "duracao": 264.0,
-    "processado": false
-  },
-  {
-    "artista": "George Michael",
-    "titulo": "George Michael - Father Figure (Official Video)",
-    "url": "https://www.youtube.com/watch?v=m_9hfHvQSNo",
-    "duracao": 337.0,
-    "processado": false
-  },
-  {
-    "artista": "Madonna",
-    "titulo": "Madonna - Into The Groove (Official Video)",
-    "url": "https://www.youtube.com/watch?v=52iW3lcpK5M",
-    "duracao": 232.0,
-    "processado": false
-  },
-  {
-    "artista": "U2",
-    "titulo": "U2 - With Or Without You (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=ujNeHIo7oTE",
-    "duracao": 293.0,
-    "processado": false
-  },
-  {
-    "artista": "Dire Straits",
-    "titulo": "Dire Straits - Calling Elvis (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=BUavFsfbFv8",
-    "duracao": 286.0,
-    "processado": false
-  },
-  {
-    "artista": "Prince",
-    "titulo": "Prince and the Revolution - Raspberry Beret (Official 4K Music Video)",
-    "url": "https://www.youtube.com/watch?v=l7vRSu_wsNc",
-    "duracao": 261.0,
-    "processado": false
-  },
-  {
-    "artista": "Bruce Springsteen",
-    "titulo": "Bruce Springsteen - Glory Days (Official Video)",
-    "url": "https://www.youtube.com/watch?v=6vQpW9XRiyM",
-    "duracao": 342.0,
+    "artista": "Bon Jovi",
+    "titulo": "Bon Jovi - (You Want To) Make A Memory (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=nWuZMBtrc1E",
+    "duracao": 241.0,
     "processado": false
   },
   {
@@ -1030,59 +553,73 @@
     "processado": false
   },
   {
-    "artista": "The Police",
-    "titulo": "The Police - Every Little Thing She Does Is Magic (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=aENX1Sf3fgQ",
-    "duracao": 261.0,
-    "processado": false
-  },
-  {
-    "artista": "Depeche Mode",
-    "titulo": "Depeche Mode - Ghosts Again (Official Video)",
-    "url": "https://www.youtube.com/watch?v=iIyrLRixMs8",
-    "duracao": 237.0,
-    "processado": false
-  },
-  {
-    "artista": "Bruce Springsteen",
-    "titulo": "Bruce Springsteen - Born to Run (Official Video)",
-    "url": "https://www.youtube.com/watch?v=IxuThNgl3YA",
-    "duracao": 333.0,
-    "processado": false
-  },
-  {
-    "artista": "Eurythmics",
-    "titulo": "Eurythmics, Annie Lennox, Dave Stewart - There Must Be An Angel (Playing With My Heart) (Remastered)",
-    "url": "https://www.youtube.com/watch?v=RCdneDxFRYQ",
-    "duracao": 283.0,
-    "processado": false
-  },
-  {
-    "artista": "Pet Shop Boys",
-    "titulo": "Pet Shop Boys - West End Girls (Official Video) [HD REMASTERED]",
-    "url": "https://www.youtube.com/watch?v=p3j2NYZ8FKs",
-    "duracao": 235.0,
-    "processado": false
-  },
-  {
-    "artista": "The Cure",
-    "titulo": "The Cure - The Lovecats",
-    "url": "https://www.youtube.com/watch?v=mcUza_wWCfA",
-    "duracao": 223.0,
+    "artista": "Iron Maiden",
+    "titulo": "Iron Maiden - The Trooper (Official Video)",
+    "url": "https://www.youtube.com/watch?v=X4bgXH3sJ2Q",
+    "duracao": 264.0,
     "processado": false
   },
   {
     "artista": "Billy Idol",
-    "titulo": "Billy Idol - Bitter Taste (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=AFj0qmBMBa4",
-    "duracao": 290.0,
+    "titulo": "Billy Idol - Shock To The System",
+    "url": "https://www.youtube.com/watch?v=lx2fZU5USus",
+    "duracao": 213.0,
     "processado": false
   },
   {
-    "artista": "Culture Club",
-    "titulo": "Culture Club - Time (Clock Of The Heart)",
-    "url": "https://www.youtube.com/watch?v=8tI1_KlO6xI",
-    "duracao": 219.0,
+    "artista": "George Michael",
+    "titulo": "George Michael - Freedom! ’90 (Official Video)",
+    "url": "https://www.youtube.com/watch?v=diYAc7gB-0A",
+    "duracao": 400.0,
+    "processado": false
+  },
+  {
+    "artista": "Bruce Springsteen",
+    "titulo": "Bruce Springsteen - Tunnel of Love (Official Video)",
+    "url": "https://www.youtube.com/watch?v=M4K7XZGeHTE",
+    "duracao": 309.0,
+    "processado": false
+  },
+  {
+    "artista": "Phil Collins",
+    "titulo": "Phil Collins Against All Odds (Official Music Video 1984)",
+    "url": "https://www.youtube.com/watch?v=SWSQS06i7-w",
+    "duracao": 207.0,
+    "processado": false
+  },
+  {
+    "artista": "Genesis",
+    "titulo": "Genesis - Land of Confusion (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=Yq7FKO5DlV0",
+    "duracao": 329.0,
+    "processado": false
+  },
+  {
+    "artista": "George Michael",
+    "titulo": "George Michael - Careless Whisper (Official Video)",
+    "url": "https://www.youtube.com/watch?v=izGwDsrQ1eQ",
+    "duracao": 301.0,
+    "processado": false
+  },
+  {
+    "artista": "The Cure",
+    "titulo": "The Cure - Fascination Street",
+    "url": "https://www.youtube.com/watch?v=7ZsQdLlvuk4",
+    "duracao": 270.0,
+    "processado": false
+  },
+  {
+    "artista": "Tina Turner",
+    "titulo": "Tina Turner - The Best (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=GC5E8ie2pdM",
+    "duracao": 250.0,
+    "processado": false
+  },
+  {
+    "artista": "Prince",
+    "titulo": "Prince and the Revolution - When Doves Cry (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=UG3VcCAlUgE",
+    "duracao": 225.0,
     "processado": false
   },
   {
@@ -1093,10 +630,423 @@
     "processado": false
   },
   {
+    "artista": "Michael Jackson",
+    "titulo": "Michael Jackson - Black Or White (Official Video - Shortened Version)",
+    "url": "https://www.youtube.com/watch?v=F2AitTPI5U0",
+    "duracao": 383.0,
+    "processado": false
+  },
+  {
+    "artista": "Guns N' Roses",
+    "titulo": "Guns N' Roses - It's So Easy",
+    "url": "https://www.youtube.com/watch?v=FMbl1ntpIXQ",
+    "duracao": 240.0,
+    "processado": false
+  },
+  {
+    "artista": "Bruce Springsteen",
+    "titulo": "Bruce Springsteen - One Step Up (Official Video)",
+    "url": "https://www.youtube.com/watch?v=MkFQHScyti0",
+    "duracao": 263.0,
+    "processado": false
+  },
+  {
+    "artista": "Queen",
+    "titulo": "Queen – Bohemian Rhapsody (Official Video Remastered)",
+    "url": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+    "duracao": 360.0,
+    "processado": false
+  },
+  {
+    "artista": "Culture Club",
+    "titulo": "Culture Club - It's A Miracle",
+    "url": "https://www.youtube.com/watch?v=YewVugPHon4",
+    "duracao": 205.0,
+    "processado": false
+  },
+  {
     "artista": "Tina Turner",
-    "titulo": "Tina Turner - The Best (Official Music Video)",
-    "url": "https://www.youtube.com/watch?v=GC5E8ie2pdM",
-    "duracao": 250.0,
+    "titulo": "Tina Turner - What's Love Got To Do With It (Official Video) [HD]",
+    "url": "https://www.youtube.com/watch?v=oGpFcHTxjZs",
+    "duracao": 227.0,
+    "processado": false
+  },
+  {
+    "artista": "Guns N' Roses",
+    "titulo": "Guns N' Roses - Sweet Child O' Mine (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
+    "duracao": 303.0,
+    "processado": false
+  },
+  {
+    "artista": "Pet Shop Boys",
+    "titulo": "Pet Shop Boys - West End Girls (Official Video) [HD REMASTERED]",
+    "url": "https://www.youtube.com/watch?v=p3j2NYZ8FKs",
+    "duracao": 235.0,
+    "processado": false
+  },
+  {
+    "artista": "A-ha",
+    "titulo": "a-ha - Lifelines (Official Video)",
+    "url": "https://www.youtube.com/watch?v=DCkbfyk6XGc",
+    "duracao": 265.0,
+    "processado": false
+  },
+  {
+    "artista": "Lionel Richie",
+    "titulo": "Lionel Richie - Running With The Night",
+    "url": "https://www.youtube.com/watch?v=wXJ5IHwBLrA",
+    "duracao": 349.0,
+    "processado": false
+  },
+  {
+    "artista": "Phil Collins",
+    "titulo": "Phil Collins - You Can't Hurry Love (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=C9IwBJYTwQ0",
+    "duracao": 172.0,
+    "processado": false
+  },
+  {
+    "artista": "Depeche Mode",
+    "titulo": "Depeche Mode - It's No Good",
+    "url": "https://www.youtube.com/watch?v=stpaq27-V70",
+    "duracao": 352.0,
+    "processado": false
+  },
+  {
+    "artista": "Prince",
+    "titulo": "Prince & The New Power Generation - My Name Is Prince (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=w0g9Qkrc8nE",
+    "duracao": 323.0,
+    "processado": false
+  },
+  {
+    "artista": "The Police",
+    "titulo": "The Police - Don't Stand So Close To Me (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=KNIZofPB8ZM",
+    "duracao": 237.0,
+    "processado": false
+  },
+  {
+    "artista": "AC/DC",
+    "titulo": "AC/DC - Through The Mists Of Time (Official Video)",
+    "url": "https://www.youtube.com/watch?v=l7-bIFDMSFA",
+    "duracao": 215.0,
+    "processado": false
+  },
+  {
+    "artista": "George Michael",
+    "titulo": "George Michael - Too Funky (Official Video)",
+    "url": "https://www.youtube.com/watch?v=JQ2DVwSVIIo",
+    "duracao": 239.0,
+    "processado": false
+  },
+  {
+    "artista": "Iron Maiden",
+    "titulo": "Iron Maiden – The Writing On The Wall (Official Video)",
+    "url": "https://www.youtube.com/watch?v=FhBnW7bZHEE",
+    "duracao": 445.0,
+    "processado": false
+  },
+  {
+    "artista": "Van Halen",
+    "titulo": "Van Halen - Unchained (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=ojNrj-sWfpk",
+    "duracao": 277.0,
+    "processado": false
+  },
+  {
+    "artista": "Tina Turner",
+    "titulo": "Tina Turner — We Don't Need Another Hero (Official Music Video) [HD]",
+    "url": "https://www.youtube.com/watch?v=HLBXAs2LO8k",
+    "duracao": 257.0,
+    "processado": false
+  },
+  {
+    "artista": "George Michael",
+    "titulo": "George Michael - Father Figure (Official Video)",
+    "url": "https://www.youtube.com/watch?v=m_9hfHvQSNo",
+    "duracao": 337.0,
+    "processado": false
+  },
+  {
+    "artista": "Bryan Adams",
+    "titulo": "Bryan Adams - (Everything I Do) I Do It For You",
+    "url": "https://www.youtube.com/watch?v=Y0pdQU87dc8",
+    "duracao": 393.0,
+    "processado": false
+  },
+  {
+    "artista": "Prince",
+    "titulo": "Prince - U Got The Look (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=_jCuroTbqBI",
+    "duracao": 332.0,
+    "processado": false
+  },
+  {
+    "artista": "Billy Idol",
+    "titulo": "Billy Idol - Rebel Yell",
+    "url": "https://www.youtube.com/watch?v=VdphvuyaV_I",
+    "duracao": 293.0,
+    "processado": false
+  },
+  {
+    "artista": "AC/DC",
+    "titulo": "AC/DC - Thunderstruck (Official Video)",
+    "url": "https://www.youtube.com/watch?v=v2AC41dglnM",
+    "duracao": 293.0,
+    "processado": false
+  },
+  {
+    "artista": "U2",
+    "titulo": "U2 - Numb (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=N4jR1RNypG0",
+    "duracao": 261.0,
+    "processado": false
+  },
+  {
+    "artista": "A-ha",
+    "titulo": "a-ha - Hunting High and Low (Official Video)",
+    "url": "https://www.youtube.com/watch?v=s6VaeFCxta8",
+    "duracao": 229.0,
+    "processado": false
+  },
+  {
+    "artista": "Culture Club",
+    "titulo": "Culture Club - Church Of The Poison Mind",
+    "url": "https://www.youtube.com/watch?v=HVzAH0FtNwg",
+    "duracao": 208.0,
+    "processado": false
+  },
+  {
+    "artista": "Pet Shop Boys",
+    "titulo": "Pet Shop Boys - What Have I Done To Deserve This (Official Video) [HD REMASTERED]",
+    "url": "https://www.youtube.com/watch?v=Wn9E5i7l-Eg",
+    "duracao": 256.0,
+    "processado": false
+  },
+  {
+    "artista": "Cyndi Lauper",
+    "titulo": "Cyndi Lauper - Time After Time (Official HD Video)",
+    "url": "https://www.youtube.com/watch?v=VdQY7BusJNU",
+    "duracao": 297.0,
+    "processado": false
+  },
+  {
+    "artista": "Tears for Fears",
+    "titulo": "Tears For Fears - Everybody Wants To Rule The World (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=aGCdLKXNF3w",
+    "duracao": 291.0,
+    "processado": false
+  },
+  {
+    "artista": "Billy Idol",
+    "titulo": "Billy Idol - Dancing With Myself",
+    "url": "https://www.youtube.com/watch?v=FG1NrQYXjLU",
+    "duracao": 204.0,
+    "processado": false
+  },
+  {
+    "artista": "Depeche Mode",
+    "titulo": "Depeche Mode - Ghosts Again (Official Video)",
+    "url": "https://www.youtube.com/watch?v=iIyrLRixMs8",
+    "duracao": 237.0,
+    "processado": false
+  },
+  {
+    "artista": "Lionel Richie",
+    "titulo": "Lionel Richie - All Night Long (All Night)",
+    "url": "https://www.youtube.com/watch?v=nqAvFx3NxUM",
+    "duracao": 229.0,
+    "processado": false
+  },
+  {
+    "artista": "Guns N' Roses",
+    "titulo": "Guns N' Roses - Paradise City (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=Rbm6GXllBiw",
+    "duracao": 409.0,
+    "processado": false
+  },
+  {
+    "artista": "Tears for Fears",
+    "titulo": "Tears For Fears - Head Over Heels",
+    "url": "https://www.youtube.com/watch?v=CsHiG-43Fzg",
+    "duracao": 256.0,
+    "processado": false
+  },
+  {
+    "artista": "Whitney Houston",
+    "titulo": "Whitney Houston - How Will I Know (Live from Welcome Home Heroes with Whitney Houston)",
+    "url": "https://www.youtube.com/watch?v=m3-hY-hlhBg",
+    "duracao": 273.0,
+    "processado": false
+  },
+  {
+    "artista": "Eurythmics",
+    "titulo": "Eurythmics, Annie Lennox, Dave Stewart - Love Is a Stranger (Official Video)",
+    "url": "https://www.youtube.com/watch?v=o6f593X6rv8",
+    "duracao": 231.0,
+    "processado": false
+  },
+  {
+    "artista": "wham!",
+    "titulo": "Wham! - Last Christmas (Official Video)",
+    "url": "https://www.youtube.com/watch?v=E8gmARGvPlI",
+    "duracao": 279.0,
+    "processado": false
+  },
+  {
+    "artista": "Whitney Houston",
+    "titulo": "Whitney Houston - I'm Every Woman (Official Video)",
+    "url": "https://www.youtube.com/watch?v=H7_sqdkaAfo",
+    "duracao": 286.0,
+    "processado": false
+  },
+  {
+    "artista": "Genesis",
+    "titulo": "Genesis - No Reply (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=yjpSoEOUgKE",
+    "duracao": 242.0,
+    "processado": false
+  },
+  {
+    "artista": "Lionel Richie",
+    "titulo": "Lionel Richie - Stuck on You",
+    "url": "https://www.youtube.com/watch?v=eEjbcOe9hsc",
+    "duracao": 223.0,
+    "processado": false
+  },
+  {
+    "artista": "Cyndi Lauper",
+    "titulo": "Cyndi Lauper - True Colors (Official HD Video)",
+    "url": "https://www.youtube.com/watch?v=LPn0KFlbqX8",
+    "duracao": 247.0,
+    "processado": false
+  },
+  {
+    "artista": "The Police",
+    "titulo": "The Police - Every Breath You Take (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=OMOGaugKpzs",
+    "duracao": 229.0,
+    "processado": false
+  },
+  {
+    "artista": "Bon Jovi",
+    "titulo": "Bon Jovi - Livin' On A Prayer",
+    "url": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+    "duracao": 249.0,
+    "processado": false
+  },
+  {
+    "artista": "Bryan Adams",
+    "titulo": "Bryan Adams - Please Forgive Me (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=9EHAo6rEuas",
+    "duracao": 378.0,
+    "processado": false
+  },
+  {
+    "artista": "Eurythmics",
+    "titulo": "Eurythmics, Annie Lennox, Dave Stewart - Here Comes The Rain Again (Remastered)",
+    "url": "https://www.youtube.com/watch?v=TzFnYcIqj6I",
+    "duracao": 284.0,
+    "processado": false
+  },
+  {
+    "artista": "Van Halen",
+    "titulo": "Van Halen - Hot For Teacher (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=6M4_Ommfvv0",
+    "duracao": 335.0,
+    "processado": false
+  },
+  {
+    "artista": "U2",
+    "titulo": "U2 - With Or Without You (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=ujNeHIo7oTE",
+    "duracao": 293.0,
+    "processado": false
+  },
+  {
+    "artista": "Madonna",
+    "titulo": "Madonna - Vogue (Official Video)",
+    "url": "https://www.youtube.com/watch?v=GuJQSAiODqI",
+    "duracao": 294.0,
+    "processado": false
+  },
+  {
+    "artista": "Iron Maiden",
+    "titulo": "Iron Maiden - The Number Of The Beast (Official Video)",
+    "url": "https://www.youtube.com/watch?v=WxnN05vOuSM",
+    "duracao": 292.0,
+    "processado": false
+  },
+  {
+    "artista": "The Cure",
+    "titulo": "The Cure - The Lovecats",
+    "url": "https://www.youtube.com/watch?v=mcUza_wWCfA",
+    "duracao": 223.0,
+    "processado": false
+  },
+  {
+    "artista": "Bruce Springsteen",
+    "titulo": "Bruce Springsteen - Dancing In the Dark (Official Video)",
+    "url": "https://www.youtube.com/watch?v=129kuDCQtHs",
+    "duracao": 239.0,
+    "processado": false
+  },
+  {
+    "artista": "Bon Jovi",
+    "titulo": "Jon Bon Jovi - Blaze Of Glory (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=MfmYCM4CS8o",
+    "duracao": 345.0,
+    "processado": false
+  },
+  {
+    "artista": "Guns N' Roses",
+    "titulo": "Guns N' Roses - Welcome To The Jungle",
+    "url": "https://www.youtube.com/watch?v=o1tj2zJ2Wvg",
+    "duracao": 280.0,
+    "processado": false
+  },
+  {
+    "artista": "Depeche Mode",
+    "titulo": "Depeche Mode - Useless (Official Video)",
+    "url": "https://www.youtube.com/watch?v=U2Kyu4XURaE",
+    "duracao": 294.0,
+    "processado": false
+  },
+  {
+    "artista": "Madonna",
+    "titulo": "Madonna - Into The Groove (Official Video)",
+    "url": "https://www.youtube.com/watch?v=52iW3lcpK5M",
+    "duracao": 232.0,
+    "processado": false
+  },
+  {
+    "artista": "Dire Straits",
+    "titulo": "Dire Straits - Walk Of Life (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=kd9TlGDZGkI",
+    "duracao": 237.0,
+    "processado": false
+  },
+  {
+    "artista": "Michael Jackson",
+    "titulo": "Michael Jackson - The Way You Make Me Feel (Official Video)",
+    "url": "https://www.youtube.com/watch?v=HzZ_urpj4As",
+    "duracao": 404.0,
+    "processado": false
+  },
+  {
+    "artista": "Phil Collins",
+    "titulo": "Phil Collins - I Don't Care Anymore (Official Music Video)",
+    "url": "https://www.youtube.com/watch?v=xLpfbcXTeo8",
+    "duracao": 311.0,
+    "processado": false
+  },
+  {
+    "artista": "Prince",
+    "titulo": "Prince and the Revolution - Raspberry Beret (Official 4K Music Video)",
+    "url": "https://www.youtube.com/watch?v=l7vRSu_wsNc",
+    "duracao": 261.0,
     "processado": false
   }
 ]
