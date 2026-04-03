@@ -22,7 +22,9 @@
     "titulo": "Metallica: Turn the Page (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=qPOTEs_yTJo",
     "duracao": 350.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-03 13:08:17",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Van Halen",
