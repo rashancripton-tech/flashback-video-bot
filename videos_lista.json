@@ -31,7 +31,9 @@
     "titulo": "Van Halen - Jump (Official Music Video) [HD]",
     "url": "https://www.youtube.com/watch?v=SwYN7mTi6HM",
     "duracao": 243.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-04 13:02:41",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Queen",
