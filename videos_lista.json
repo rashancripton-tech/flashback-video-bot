@@ -40,7 +40,9 @@
     "titulo": "Queen - I'm Going Slightly Mad (Official Video)",
     "url": "https://www.youtube.com/watch?v=Od6hY_50Dh0",
     "duracao": 272.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-05 12:57:24",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Bon Jovi",
