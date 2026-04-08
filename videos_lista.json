@@ -58,7 +58,9 @@
     "titulo": "Bon Jovi, Jennifer Nettles - Who Says You Can't Go Home",
     "url": "https://www.youtube.com/watch?v=5CeX5VEo10c",
     "duracao": 233.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-08 13:26:28",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Tears for Fears",
