@@ -67,7 +67,9 @@
     "titulo": "Tears For Fears - Shout (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=Ye7FKc1JQe4",
     "duracao": 360.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-09 13:29:46",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Dire Straits",
