@@ -76,7 +76,9 @@
     "titulo": "Dire Straits - Wild West End (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=T4Ad_J_2l0w",
     "duracao": 282.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-10 13:14:12",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Eurythmics",
