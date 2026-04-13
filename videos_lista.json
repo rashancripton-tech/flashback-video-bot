@@ -103,7 +103,9 @@
     "titulo": "Pet Shop Boys - Heart (Official Video) [HD Upgrade]",
     "url": "https://www.youtube.com/watch?v=vlIsU7ImU0w",
     "duracao": 266.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-13 13:32:16",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Culture Club",
