@@ -112,7 +112,9 @@
     "titulo": "Culture Club - Karma Chameleon (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=JmcA9LIIXWw",
     "duracao": 239.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-14 13:23:06",
+    "proxy_usado": "186.250.29.225"
   },
   {
     "artista": "Tina Turner",
