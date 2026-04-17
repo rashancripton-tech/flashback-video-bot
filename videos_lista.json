@@ -139,7 +139,9 @@
     "titulo": "Whitney Houston - I Have Nothing (Official HD Video)",
     "url": "https://www.youtube.com/watch?v=FxYw0XPEoKE",
     "duracao": 291.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-17 13:19:05",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Depeche Mode",
