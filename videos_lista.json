@@ -148,7 +148,9 @@
     "titulo": "Depeche Mode - Precious (Remastered)",
     "url": "https://www.youtube.com/watch?v=8yn3ViE6mhY",
     "duracao": 249.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-18 12:56:51",
+    "proxy_usado": "186.250.29.225"
   },
   {
     "artista": "Metallica",
