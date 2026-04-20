@@ -166,7 +166,9 @@
     "titulo": "Cyndi Lauper - Girls Just Want To Have Fun (Official Video)",
     "url": "https://www.youtube.com/watch?v=PIb6AZdTr-A",
     "duracao": 267.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-20 13:26:11",
+    "proxy_usado": "186.250.29.225"
   },
   {
     "artista": "Prince",
