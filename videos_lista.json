@@ -175,7 +175,9 @@
     "titulo": "Prince - Little Red Corvette (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=v0KpfrJE4zw",
     "duracao": 190.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-21 13:24:17",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "U2",
