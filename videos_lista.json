@@ -184,7 +184,9 @@
     "titulo": "U2 - Mysterious Ways (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=TxcDTUMLQJI",
     "duracao": 243.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-22 13:39:53",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Queen",
