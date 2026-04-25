@@ -202,7 +202,9 @@
     "titulo": "Metallica - Until It Sleeps (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=F3WIHtOmkBg",
     "duracao": 274.0,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-04-25 13:22:20"
   },
   {
     "artista": "Duran Duran",
