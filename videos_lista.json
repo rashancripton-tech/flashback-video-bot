@@ -211,7 +211,9 @@
     "titulo": "Duran Duran - Girls On Film (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=KCjMZMxNr-0",
     "duracao": 208.0,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-04-26 13:22:22"
   },
   {
     "artista": "U2",
