@@ -229,7 +229,9 @@
     "titulo": "Tina Turner - I Don't Wanna Lose You (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=pLj5sBfGuQY",
     "duracao": 257.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-04-30 13:58:54",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "The Police",
