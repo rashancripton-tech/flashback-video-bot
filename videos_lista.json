@@ -4,7 +4,9 @@
     "titulo": "The Cure - Just Like Heaven",
     "url": "https://www.youtube.com/watch?v=n3nPiBai66M",
     "duracao": 207.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-01 13:21:23",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Prince",
