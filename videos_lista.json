@@ -13,7 +13,9 @@
     "titulo": "Prince and the Revolution - When Doves Cry (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=UG3VcCAlUgE",
     "duracao": 225.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-02 13:13:33",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Bryan Adams",
