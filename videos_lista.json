@@ -94,7 +94,9 @@
     "titulo": "a-ha - You Are the One (Official Video)",
     "url": "https://www.youtube.com/watch?v=Wut994fxYA8",
     "duracao": 231.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-12 14:28:01",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Iron Maiden",
