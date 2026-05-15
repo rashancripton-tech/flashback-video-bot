@@ -112,7 +112,9 @@
     "titulo": "Tina Turner - What's Love Got To Do With It (Official Video) [HD]",
     "url": "https://www.youtube.com/watch?v=oGpFcHTxjZs",
     "duracao": 227.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-15 14:22:49",
+    "proxy_usado": "177.22.250.160"
   },
   {
     "artista": "Tears for Fears",
