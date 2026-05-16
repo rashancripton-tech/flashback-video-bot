@@ -121,7 +121,9 @@
     "titulo": "Tears for Fears - Everybody Wants to Rule the World (Full Video)",
     "url": "https://www.youtube.com/watch?v=3OFOZQ6pMGo",
     "duracao": 272.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-16 13:20:11",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Tears for Fears",
