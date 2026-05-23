@@ -157,7 +157,9 @@
     "titulo": "Wham! - Wake Me Up Before You Go-Go (Official Video)",
     "url": "https://www.youtube.com/watch?v=pIgZ7gMze7A",
     "duracao": 234.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-23 13:24:35",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Dire Straits",
