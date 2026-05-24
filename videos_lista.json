@@ -166,7 +166,9 @@
     "titulo": "Dire Straits - So Far Away (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=YIHMPc6ZCuI",
     "duracao": 242.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-24 13:22:56",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Eurythmics",
