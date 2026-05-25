@@ -175,7 +175,9 @@
     "titulo": "Eurythmics, Annie Lennox, Dave Stewart - Missionary Man (Official Video)",
     "url": "https://www.youtube.com/watch?v=0-Q3cp3cp88",
     "duracao": 262.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-25 15:04:15",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Whitney Houston",
