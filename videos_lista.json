@@ -184,7 +184,9 @@
     "titulo": "Whitney Houston - How Will I Know (Live from Welcome Home Heroes with Whitney Houston)",
     "url": "https://www.youtube.com/watch?v=m3-hY-hlhBg",
     "duracao": 273.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-26 15:08:34",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Lionel Richie",
