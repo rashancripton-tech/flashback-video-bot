@@ -193,7 +193,9 @@
     "titulo": "Lionel Richie You Are",
     "url": "https://www.youtube.com/watch?v=H4tMPGgvBp4",
     "duracao": 236.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-27 15:34:58",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Prince",
