@@ -211,7 +211,9 @@
     "titulo": "Duran Duran - Rio (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=nTizYn3-QN0",
     "duracao": 305.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-29 15:16:08",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "The Cure",
