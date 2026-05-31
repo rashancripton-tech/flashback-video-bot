@@ -229,7 +229,9 @@
     "titulo": "Madonna - Lucky Star (Official Video)",
     "url": "https://www.youtube.com/watch?v=ThHz9wlBeLU",
     "duracao": 243.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-05-31 13:36:39",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Bon Jovi",
