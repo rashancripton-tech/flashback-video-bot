@@ -13,7 +13,9 @@
     "titulo": "Bruce Springsteen - Brilliant Disguise (Official Video)",
     "url": "https://www.youtube.com/watch?v=idnJnjV_8rg",
     "duracao": 255.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-03 16:42:21",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Culture Club",
