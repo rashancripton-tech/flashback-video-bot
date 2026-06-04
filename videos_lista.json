@@ -22,7 +22,9 @@
     "titulo": "Culture Club - Time (Clock Of The Heart)",
     "url": "https://www.youtube.com/watch?v=8tI1_KlO6xI",
     "duracao": 219.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-04 14:57:10",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Culture Club",
