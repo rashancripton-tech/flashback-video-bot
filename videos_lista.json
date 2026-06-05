@@ -31,7 +31,9 @@
     "titulo": "Culture Club - It's A Miracle",
     "url": "https://www.youtube.com/watch?v=YewVugPHon4",
     "duracao": 205.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-05 14:47:13",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "The Police",
