@@ -58,7 +58,9 @@
     "titulo": "Guns N' Roses - Sweet Child O' Mine (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
     "duracao": 303.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-08 15:57:39",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "Iron Maiden",
