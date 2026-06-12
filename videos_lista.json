@@ -85,7 +85,9 @@
     "titulo": "Madonna - Hung Up (Official Video) [HD]",
     "url": "https://www.youtube.com/watch?v=EDwb9jOVRtU",
     "duracao": 334.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-12 15:04:24",
+    "proxy_usado": "200.174.198.32"
   },
   {
     "artista": "George Michael",
