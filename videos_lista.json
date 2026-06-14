@@ -103,7 +103,9 @@
     "titulo": "Madonna - Live To Tell (Official Video)",
     "url": "https://www.youtube.com/watch?v=IzAO9A9GjgI",
     "duracao": 275.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-14 14:03:06",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Phil Collins",
