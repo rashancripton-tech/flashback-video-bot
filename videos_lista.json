@@ -148,7 +148,9 @@
     "titulo": "Duran Duran - Hungry like the Wolf (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=oJL-lCzEXgI",
     "duracao": 223.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-20 14:14:41",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Depeche Mode",
