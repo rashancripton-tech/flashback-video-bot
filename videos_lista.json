@@ -184,7 +184,9 @@
     "titulo": "Genesis - a trick of the tail.",
     "url": "https://www.youtube.com/watch?v=MWxaidVIjXk",
     "duracao": 264.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-24 14:34:28",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Tears for Fears",
