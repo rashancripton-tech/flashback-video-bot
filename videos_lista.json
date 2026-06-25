@@ -193,7 +193,9 @@
     "titulo": "Tears For Fears - Mad World (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=u1ZvPSpLxCg",
     "duracao": 226.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-25 14:22:08",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Depeche Mode",
