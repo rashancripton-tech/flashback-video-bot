@@ -211,7 +211,9 @@
     "titulo": "Tina Turner — We Don't Need Another Hero (Official Music Video) [HD]",
     "url": "https://www.youtube.com/watch?v=HLBXAs2LO8k",
     "duracao": 257.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-27 13:32:46",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Genesis",
