@@ -229,7 +229,9 @@
     "titulo": "Duran Duran - Girls On Film (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=KCjMZMxNr-0",
     "duracao": 208.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-06-29 15:49:22",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Tina Turner",
