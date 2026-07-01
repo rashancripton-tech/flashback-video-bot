@@ -4,7 +4,9 @@
     "titulo": "Bon Jovi - Livin' On A Prayer",
     "url": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
     "duracao": 249.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-01 14:52:27",
+    "proxy_usado": "177.22.250.160"
   },
   {
     "artista": "Dire Straits",
