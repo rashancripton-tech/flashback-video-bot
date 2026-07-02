@@ -13,7 +13,9 @@
     "titulo": "Dire Straits - Heavy Fuel (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=EExahMsBoWM",
     "duracao": 264.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-02 13:57:46",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Cyndi Lauper",
