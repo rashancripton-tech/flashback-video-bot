@@ -31,7 +31,9 @@
     "titulo": "Bruce Springsteen - Dancing In the Dark (Official Video)",
     "url": "https://www.youtube.com/watch?v=129kuDCQtHs",
     "duracao": 239.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-04 13:24:24",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Eurythmics",
