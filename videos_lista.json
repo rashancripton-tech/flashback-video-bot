@@ -49,7 +49,9 @@
     "titulo": "Van Halen - You Really Got Me (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=9X6e7uctAww",
     "duracao": 206.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-06 15:29:37",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Pet Shop Boys",
