@@ -76,7 +76,9 @@
     "titulo": "George Michael - Careless Whisper (Official Video)",
     "url": "https://www.youtube.com/watch?v=izGwDsrQ1eQ",
     "duracao": 301.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-09 15:12:25",
+    "proxy_usado": "191.5.38.6"
   },
   {
     "artista": "Guns N' Roses",
