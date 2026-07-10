@@ -85,7 +85,9 @@
     "titulo": "Guns N' Roses - It's So Easy",
     "url": "https://www.youtube.com/watch?v=FMbl1ntpIXQ",
     "duracao": 240.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-10 14:29:32",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Lionel Richie",
