@@ -94,7 +94,9 @@
     "titulo": "Lionel Richie - All Night Long (All Night)",
     "url": "https://www.youtube.com/watch?v=nqAvFx3NxUM",
     "duracao": 229.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-11 13:16:08",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Bon Jovi",
