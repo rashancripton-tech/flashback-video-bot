@@ -103,7 +103,9 @@
     "titulo": "Bon Jovi - Born To Be My Baby",
     "url": "https://www.youtube.com/watch?v=Ahf2B_eZUc4",
     "duracao": 311.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-12 13:20:22",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Depeche Mode",
