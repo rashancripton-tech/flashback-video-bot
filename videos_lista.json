@@ -112,7 +112,9 @@
     "titulo": "Depeche Mode - Precious (Remastered)",
     "url": "https://www.youtube.com/watch?v=8yn3ViE6mhY",
     "duracao": 249.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-13 14:31:58",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Bryan Adams",
