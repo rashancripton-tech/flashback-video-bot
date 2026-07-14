@@ -121,7 +121,9 @@
     "titulo": "Bryan Adams - Somebody",
     "url": "https://www.youtube.com/watch?v=VqhELBUdYqM",
     "duracao": 283.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-14 13:34:37",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Culture Club",
