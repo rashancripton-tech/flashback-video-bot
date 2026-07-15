@@ -130,7 +130,9 @@
     "titulo": "Culture Club - Time (Clock Of The Heart)",
     "url": "https://www.youtube.com/watch?v=8tI1_KlO6xI",
     "duracao": 219.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-15 13:37:36",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Madonna",
