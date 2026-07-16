@@ -139,7 +139,9 @@
     "titulo": "Madonna - Vogue (Official Video)",
     "url": "https://www.youtube.com/watch?v=GuJQSAiODqI",
     "duracao": 294.0,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-07-16 14:05:30"
   },
   {
     "artista": "Tina Turner",
