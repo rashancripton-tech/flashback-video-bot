@@ -166,7 +166,9 @@
     "titulo": "Tina Turner - What You Get Is What You See (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=e0GVixJvt-g",
     "duracao": 248.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-19 13:19:06",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Iron Maiden",
