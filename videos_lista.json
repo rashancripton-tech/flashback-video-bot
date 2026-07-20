@@ -175,7 +175,9 @@
     "titulo": "Iron Maiden - Flight Of Icarus (Official Video)",
     "url": "https://www.youtube.com/watch?v=p4w2BZXL6Ss",
     "duracao": 234.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-20 14:06:32",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Madonna",
