@@ -184,7 +184,9 @@
     "titulo": "Madonna - Justify My Love (Official Video) [HD]",
     "url": "https://www.youtube.com/watch?v=Np_Y740aReI",
     "duracao": 299.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-21 13:37:04",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Lionel Richie",
