@@ -193,7 +193,9 @@
     "titulo": "Lionel Richie - Dancing On The Ceiling",
     "url": "https://www.youtube.com/watch?v=ovo6zwv6DX4",
     "duracao": 316.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-22 13:51:26",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Phil Collins",
