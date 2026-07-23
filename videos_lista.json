@@ -202,7 +202,9 @@
     "titulo": "Phil Collins - Do You Remember? (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=hhfx1MdjnZc",
     "duracao": 337.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-23 14:09:18",
+    "proxy_usado": "191.5.38.6"
   },
   {
     "artista": "Phil Collins",
