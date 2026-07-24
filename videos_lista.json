@@ -211,7 +211,9 @@
     "titulo": "Genesis - Land of Confusion (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=Yq7FKO5DlV0",
     "duracao": 329.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-24 13:41:14",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Metallica",
