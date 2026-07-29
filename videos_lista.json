@@ -256,7 +256,9 @@
     "titulo": "Pet Shop Boys - So Hard",
     "url": "https://www.youtube.com/watch?v=jFAA6Z_YIEM",
     "duracao": 242.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-29 14:11:39",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "Bon Jovi",
