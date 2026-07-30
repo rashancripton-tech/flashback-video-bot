@@ -265,7 +265,9 @@
     "titulo": "Bon Jovi - Bed Of Roses (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=NvR60Wg9R7Q",
     "duracao": 403.0,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-07-30 13:58:28",
+    "proxy_usado": "179.51.199.80"
   },
   {
     "artista": "George Michael",
