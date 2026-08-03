@@ -22,7 +22,9 @@
     "titulo": "U2 - The Unforgettable Fire (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=KTzmzrruHwc",
     "duracao": 289,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-03 14:36:30",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "The Police",
