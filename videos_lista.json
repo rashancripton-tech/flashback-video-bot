@@ -58,7 +58,9 @@
     "titulo": "AC/DC - Thunderstruck (Official Video)",
     "url": "https://www.youtube.com/watch?v=v2AC41dglnM",
     "duracao": 293,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-07 13:17:02",
+    "proxy_usado": "191.5.38.6"
   },
   {
     "artista": "Cyndi Lauper",
