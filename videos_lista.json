@@ -67,7 +67,9 @@
     "titulo": "Cyndi Lauper - I Drove All Night",
     "url": "https://www.youtube.com/watch?v=2y1TZXc5DiY",
     "duracao": 278,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-08 12:47:15",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Culture Club",
