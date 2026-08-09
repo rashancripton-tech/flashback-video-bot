@@ -76,7 +76,9 @@
     "titulo": "Culture Club - Time (Clock Of The Heart)",
     "url": "https://www.youtube.com/watch?v=8tI1_KlO6xI",
     "duracao": 219,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-08-09 12:59:20"
   },
   {
     "artista": "Guns N' Roses",
