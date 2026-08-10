@@ -85,7 +85,9 @@
     "titulo": "Guns N' Roses - It's So Easy",
     "url": "https://www.youtube.com/watch?v=FMbl1ntpIXQ",
     "duracao": 240,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-10 13:16:58",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Madonna",
