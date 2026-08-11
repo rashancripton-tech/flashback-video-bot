@@ -94,7 +94,9 @@
     "titulo": "Madonna - Justify My Love (Official Video) [HD]",
     "url": "https://www.youtube.com/watch?v=Np_Y740aReI",
     "duracao": 299,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-11 13:13:59",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Whitney Houston",
