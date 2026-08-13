@@ -112,7 +112,9 @@
     "titulo": "Cyndi Lauper - She Bop (Official HD Video)",
     "url": "https://www.youtube.com/watch?v=KFq4E9XTueY",
     "duracao": 278,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-08-13 13:20:28"
   },
   {
     "artista": "A-ha",
