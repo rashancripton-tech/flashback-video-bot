@@ -121,7 +121,9 @@
     "titulo": "a-ha - Take On Me (Official Video) [4K]",
     "url": "https://www.youtube.com/watch?v=djV11Xbc914",
     "duracao": 244,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-14 13:16:44",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "The Cure",
