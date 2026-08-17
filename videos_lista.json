@@ -148,7 +148,9 @@
     "titulo": "Van Halen - Why Can't This Be Love [Official Video]",
     "url": "https://www.youtube.com/watch?v=IONcKbWeyQM",
     "duracao": 217,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-08-17 12:55:15"
   },
   {
     "artista": "Phil Collins",
