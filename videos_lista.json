@@ -157,7 +157,9 @@
     "titulo": "Phil Collins Against All Odds (Official Music Video 1984)",
     "url": "https://www.youtube.com/watch?v=SWSQS06i7-w",
     "duracao": 207,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-08-18 12:56:34"
   },
   {
     "artista": "Metallica",
