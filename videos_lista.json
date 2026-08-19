@@ -166,7 +166,9 @@
     "titulo": "Metallica - I Disappear [HD] (2000)",
     "url": "https://www.youtube.com/watch?v=0xLQyxvohmc",
     "duracao": 271,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-08-19 13:00:55"
   },
   {
     "artista": "Eurythmics",
