@@ -175,7 +175,9 @@
     "titulo": "Eurythmics, Annie Lennox, Dave Stewart - Would I Lie to You? (Official Video)",
     "url": "https://www.youtube.com/watch?v=Uhpu2N4rQZM",
     "duracao": 309,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-08-20 12:55:50"
   },
   {
     "artista": "Whitney Houston",
