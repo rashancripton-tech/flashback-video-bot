@@ -193,7 +193,9 @@
     "titulo": "Tears For Fears - Sowing The Seeds Of Love",
     "url": "https://www.youtube.com/watch?v=VAtGOESO7W8",
     "duracao": 332,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-08-22 12:47:11"
   },
   {
     "artista": "Queen",
