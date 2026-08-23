@@ -202,7 +202,9 @@
     "titulo": "Queen - Somebody To Love (Official Video)",
     "url": "https://www.youtube.com/watch?v=kijpcUv-b8M",
     "duracao": 310,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-08-23 12:52:13"
   },
   {
     "artista": "Bryan Adams",
