@@ -211,7 +211,9 @@
     "titulo": "Bryan Adams - Touch The Hand",
     "url": "https://www.youtube.com/watch?v=4N6iOADGNvo",
     "duracao": 245,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-08-24 12:58:27"
   },
   {
     "artista": "U2",
