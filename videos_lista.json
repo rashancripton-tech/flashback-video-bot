@@ -238,7 +238,9 @@
     "titulo": "Queen - Breakthru (Official Video Remastered)",
     "url": "https://www.youtube.com/watch?v=CEjU9KVABao",
     "duracao": 266,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-27 21:48:09",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Lionel Richie",
