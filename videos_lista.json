@@ -247,7 +247,9 @@
     "titulo": "Lionel Richie - Dancing On The Ceiling",
     "url": "https://www.youtube.com/watch?v=ovo6zwv6DX4",
     "duracao": 316,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-28 21:49:20",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Bon Jovi",
