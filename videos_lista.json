@@ -256,7 +256,9 @@
     "titulo": "Bon Jovi - Livin' On A Prayer",
     "url": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
     "duracao": 249,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-29 16:25:23",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Bruce Springsteen",
