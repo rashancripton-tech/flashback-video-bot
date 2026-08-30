@@ -265,7 +265,9 @@
     "titulo": "Bruce Springsteen - Human Touch (Official HD Video)",
     "url": "https://www.youtube.com/watch?v=85cNRQo1m3A",
     "duracao": 392,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-30 16:18:30",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Tears for Fears",
