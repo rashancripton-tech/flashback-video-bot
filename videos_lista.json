@@ -274,7 +274,9 @@
     "titulo": "Tears For Fears - Shout (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=Ye7FKc1JQe4",
     "duracao": 360,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-08-31 18:50:23",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Iron Maiden",
