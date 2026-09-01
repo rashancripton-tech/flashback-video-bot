@@ -4,7 +4,9 @@
     "titulo": "a-ha - Take On Me (Official Video) [4K]",
     "url": "https://www.youtube.com/watch?v=djV11Xbc914",
     "duracao": 244,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-01 16:18:51"
   },
   {
     "artista": "Depeche Mode",
