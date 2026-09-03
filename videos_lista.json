@@ -13,7 +13,9 @@
     "titulo": "Depeche Mode - Everything Counts (Official Video)",
     "url": "https://www.youtube.com/watch?v=1t-gK-9EIq4",
     "duracao": 239,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-03 15:59:44"
   },
   {
     "artista": "Bryan Adams",
