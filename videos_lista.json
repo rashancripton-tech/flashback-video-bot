@@ -31,7 +31,9 @@
     "titulo": "The Police - Don't Stand So Close To Me (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=KNIZofPB8ZM",
     "duracao": 237,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-05 14:48:55"
   },
   {
     "artista": "Guns N' Roses",
