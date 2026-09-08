@@ -58,7 +58,9 @@
     "titulo": "Culture Club - Church Of The Poison Mind",
     "url": "https://www.youtube.com/watch?v=HVzAH0FtNwg",
     "duracao": 208,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-08 16:14:27"
   },
   {
     "artista": "Bryan Adams",
