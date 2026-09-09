@@ -67,7 +67,9 @@
     "titulo": "Bryan Adams - Run To You",
     "url": "https://www.youtube.com/watch?v=nCBASt507WA",
     "duracao": 226,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-09-09 15:57:29",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "The Police",
