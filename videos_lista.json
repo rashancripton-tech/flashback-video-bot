@@ -76,7 +76,9 @@
     "titulo": "The Police - Every Breath You Take (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=OMOGaugKpzs",
     "duracao": 229,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-09-10 16:01:33",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Bon Jovi",
