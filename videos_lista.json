@@ -103,7 +103,9 @@
     "titulo": "Bryan Adams - (Everything I Do) I Do It For You",
     "url": "https://www.youtube.com/watch?v=Y0pdQU87dc8",
     "duracao": 393,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-09-13 15:39:11",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Depeche Mode",
