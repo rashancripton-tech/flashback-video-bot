@@ -112,7 +112,9 @@
     "titulo": "Depeche Mode - Never Let Me Down Again (Remastered)",
     "url": "https://www.youtube.com/watch?v=snILjFUkk_A",
     "duracao": 266,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-14 17:51:43"
   },
   {
     "artista": "Duran Duran",
