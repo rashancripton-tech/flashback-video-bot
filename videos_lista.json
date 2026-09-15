@@ -121,7 +121,9 @@
     "titulo": "Duran Duran - Hungry like the Wolf (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=oJL-lCzEXgI",
     "duracao": 223,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-15 16:27:30"
   },
   {
     "artista": "Bon Jovi",
