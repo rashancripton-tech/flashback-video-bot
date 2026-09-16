@@ -130,7 +130,9 @@
     "titulo": "Bon Jovi - Wanted Dead Or Alive (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=SRvCvsRp5ho",
     "duracao": 250,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-16 16:19:52"
   },
   {
     "artista": "Bruce Springsteen",
