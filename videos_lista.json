@@ -139,7 +139,9 @@
     "titulo": "Bruce Springsteen - Tunnel of Love (Official Video)",
     "url": "https://www.youtube.com/watch?v=M4K7XZGeHTE",
     "duracao": 309,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-17 16:25:18"
   },
   {
     "artista": "Duran Duran",
