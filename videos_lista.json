@@ -148,7 +148,9 @@
     "titulo": "Duran Duran - White Lines (Extended) (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=Ah4f62bYAcw",
     "duracao": 339,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-18 16:03:24"
   },
   {
     "artista": "Whitney Houston",
