@@ -166,7 +166,9 @@
     "titulo": "Pet Shop Boys - Can you forgive her? (Official Video) [HD Upgrade]",
     "url": "https://www.youtube.com/watch?v=80bDPn1P1es",
     "duracao": 238,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-09-20 15:35:00",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Bryan Adams",
