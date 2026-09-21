@@ -175,7 +175,9 @@
     "titulo": "Bryan Adams - Summer Of 69 (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=9f06QZCVUHg",
     "duracao": 208,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-21 18:02:00"
   },
   {
     "artista": "Cyndi Lauper",
