@@ -211,7 +211,9 @@
     "titulo": "Culture Club - It's A Miracle",
     "url": "https://www.youtube.com/watch?v=YewVugPHon4",
     "duracao": 205,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-09-25 16:41:24",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Guns N' Roses",
