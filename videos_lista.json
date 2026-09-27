@@ -229,7 +229,9 @@
     "titulo": "Olivia Rodrigo - the cure (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=B402rKl4bUg",
     "duracao": 315,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-27 16:36:44"
   },
   {
     "artista": "Whitney Houston",
