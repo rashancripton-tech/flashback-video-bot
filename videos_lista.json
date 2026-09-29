@@ -247,7 +247,9 @@
     "titulo": "Genesis - Turn It On Again (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=8OIkw9kJ0u4",
     "duracao": 226,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-09-29 17:48:37"
   },
   {
     "artista": "Tears for Fears",
