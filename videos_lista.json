@@ -22,7 +22,9 @@
     "titulo": "Dire Straits - Sultans Of Swing (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=h0ffIJ7ZO4U",
     "duracao": 267,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-10-03 15:58:28"
   },
   {
     "artista": "Tears for Fears",
