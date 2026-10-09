@@ -58,7 +58,9 @@
     "titulo": "Iron Maiden - The Trooper (Official Video)",
     "url": "https://www.youtube.com/watch?v=X4bgXH3sJ2Q",
     "duracao": 264,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-10-09 18:15:45"
   },
   {
     "artista": "Bryan Adams",
