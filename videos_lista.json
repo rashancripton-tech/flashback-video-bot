@@ -67,7 +67,9 @@
     "titulo": "Bryan Adams - (Everything I Do) I Do It For You",
     "url": "https://www.youtube.com/watch?v=Y0pdQU87dc8",
     "duracao": 393,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-10-10 17:10:02",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Pet Shop Boys",
