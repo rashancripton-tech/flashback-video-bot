@@ -76,7 +76,9 @@
     "titulo": "Pet Shop Boys - Always on my mind (Official Video) [4k Upgrade]",
     "url": "https://www.youtube.com/watch?v=bDMCwSP5nf0",
     "duracao": 313,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-10-11 17:33:02",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "George Michael",
