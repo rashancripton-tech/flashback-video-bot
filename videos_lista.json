@@ -94,7 +94,9 @@
     "titulo": "Lionel Richie - Hello (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=mHONNcZbwDY",
     "duracao": 327,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-10-13 19:07:57",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Billy Idol",
