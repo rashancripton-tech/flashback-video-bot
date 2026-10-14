@@ -103,7 +103,9 @@
     "titulo": "Billy Idol - Rebel Yell",
     "url": "https://www.youtube.com/watch?v=VdphvuyaV_I",
     "duracao": 293,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-10-14 16:47:23",
+    "proxy_usado": "191.5.38.6"
   },
   {
     "artista": "Michael Jackson",
