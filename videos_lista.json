@@ -112,7 +112,9 @@
     "titulo": "Michael Jackson - Beat It (Official 4K Video)",
     "url": "https://www.youtube.com/watch?v=oRdxUFDoQe0",
     "duracao": 299,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-10-15 16:31:56"
   },
   {
     "artista": "Lionel Richie",
