@@ -130,7 +130,9 @@
     "titulo": "Billy Idol - Cradle Of Love",
     "url": "https://www.youtube.com/watch?v=NCZuYS-9qaw",
     "duracao": 322,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-10-17 15:08:02",
+    "proxy_usado": "186.235.123.3"
   },
   {
     "artista": "Pet Shop Boys",
