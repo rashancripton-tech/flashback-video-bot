@@ -139,7 +139,9 @@
     "titulo": "Pet Shop Boys - Heart (Official Video) [HD Upgrade]",
     "url": "https://www.youtube.com/watch?v=vlIsU7ImU0w",
     "duracao": 266,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-10-18 15:37:57"
   },
   {
     "artista": "The Police",
