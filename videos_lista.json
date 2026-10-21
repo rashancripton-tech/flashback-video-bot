@@ -166,7 +166,9 @@
     "titulo": "Madonna - Human Nature (Official Video)",
     "url": "https://www.youtube.com/watch?v=XPL_qGqSJxA",
     "duracao": 274,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-10-21 16:49:40"
   },
   {
     "artista": "Tina Turner",
