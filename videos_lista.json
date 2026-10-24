@@ -184,7 +184,9 @@
     "titulo": "The Cure - A Forest",
     "url": "https://www.youtube.com/watch?v=xik-y0xlpZ0",
     "duracao": 283,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-10-24 15:37:48"
   },
   {
     "artista": "Iron Maiden",
