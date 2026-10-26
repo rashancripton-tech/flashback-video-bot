@@ -202,7 +202,9 @@
     "titulo": "Tina Turner - Better Be Good To Me (Official Video) [HD]",
     "url": "https://www.youtube.com/watch?v=qyU7BbQSm98",
     "duracao": 243,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-10-26 18:28:49"
   },
   {
     "artista": "Van Halen",
