@@ -229,7 +229,9 @@
     "titulo": "Depeche Mode - Policy of Truth (Official Video)",
     "url": "https://www.youtube.com/watch?v=M2VBmHOYpV8",
     "duracao": 249,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-10-30 17:58:24"
   },
   {
     "artista": "A-ha",
