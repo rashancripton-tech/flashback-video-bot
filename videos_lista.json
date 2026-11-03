@@ -22,7 +22,9 @@
     "titulo": "Guns N' Roses - It's So Easy",
     "url": "https://www.youtube.com/watch?v=FMbl1ntpIXQ",
     "duracao": 240,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-11-03 19:07:05",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Depeche Mode",
