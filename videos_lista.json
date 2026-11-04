@@ -31,7 +31,9 @@
     "titulo": "Depeche Mode - Everything Counts (Official Video)",
     "url": "https://www.youtube.com/watch?v=1t-gK-9EIq4",
     "duracao": 239,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-11-04 19:25:56",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Pet Shop Boys",
