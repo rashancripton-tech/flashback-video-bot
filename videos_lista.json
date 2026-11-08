@@ -49,7 +49,9 @@
     "titulo": "Dire Straits - Money For Nothing (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=wTP2RUD_cL0",
     "duracao": 279,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-11-08 17:50:40"
   },
   {
     "artista": "Bon Jovi",
