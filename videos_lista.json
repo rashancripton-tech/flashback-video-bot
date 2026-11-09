@@ -58,7 +58,9 @@
     "titulo": "Bon Jovi - Always (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=9BMwcO6_hyA",
     "duracao": 366,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-11-09 22:02:34",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "George Michael",
