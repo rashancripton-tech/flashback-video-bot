@@ -67,7 +67,9 @@
     "titulo": "George Michael - Father Figure (Official Video)",
     "url": "https://www.youtube.com/watch?v=m_9hfHvQSNo",
     "duracao": 337,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-11-10 19:35:31"
   },
   {
     "artista": "Culture Club",
