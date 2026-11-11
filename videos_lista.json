@@ -76,7 +76,9 @@
     "titulo": "Culture Club - Time (Clock Of The Heart)",
     "url": "https://www.youtube.com/watch?v=8tI1_KlO6xI",
     "duracao": 219,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-11-11 19:20:00",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Dire Straits",
