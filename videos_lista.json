@@ -85,7 +85,9 @@
     "titulo": "Dire Straits - Romeo And Juliet (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=rC95MEenIxA",
     "duracao": 361,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-11-12 19:48:42"
   },
   {
     "artista": "AC/DC",
