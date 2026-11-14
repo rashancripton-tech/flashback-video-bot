@@ -103,7 +103,9 @@
     "titulo": "Metallica: One (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=WM8bTdBs-cw",
     "duracao": 465,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-11-14 17:56:53"
   },
   {
     "artista": "Duran Duran",
