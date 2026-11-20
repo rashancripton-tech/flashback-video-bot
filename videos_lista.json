@@ -157,7 +157,9 @@
     "titulo": "Duran Duran - Rio (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=nTizYn3-QN0",
     "duracao": 305,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-11-20 19:54:30"
   },
   {
     "artista": "Madonna",
