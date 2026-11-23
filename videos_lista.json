@@ -184,7 +184,9 @@
     "titulo": "Queen - Breakthru (Official Video Remastered)",
     "url": "https://www.youtube.com/watch?v=CEjU9KVABao",
     "duracao": 266,
-    "processado": false
+    "processado": true,
+    "erro": "Falha em todos os 10 proxies",
+    "data_processamento": "2026-11-23 23:38:33"
   },
   {
     "artista": "Bon Jovi",
