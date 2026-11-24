@@ -193,7 +193,9 @@
     "titulo": "Bon Jovi - Livin' On A Prayer",
     "url": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
     "duracao": 249,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-11-24 22:16:32",
+    "proxy_usado": "191.5.38.6"
   },
   {
     "artista": "U2",
