@@ -202,7 +202,9 @@
     "titulo": "U2 - 'One' (Official Music Video)",
     "url": "https://www.youtube.com/watch?v=ftjEcrrf7r0",
     "duracao": 274,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-11-25 21:08:36",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Cyndi Lauper",
