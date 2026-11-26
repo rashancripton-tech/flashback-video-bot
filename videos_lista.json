@@ -211,7 +211,9 @@
     "titulo": "Cyndi Lauper - She Bop (Official HD Video)",
     "url": "https://www.youtube.com/watch?v=KFq4E9XTueY",
     "duracao": 278,
-    "processado": false
+    "processado": true,
+    "data_processamento": "2026-11-26 20:58:31",
+    "proxy_usado": "187.49.178.237"
   },
   {
     "artista": "Bruce Springsteen",
